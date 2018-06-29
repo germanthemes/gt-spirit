@@ -2,7 +2,7 @@
 /**
  * Custom Font Control for the Customizer
  *
- * @package GT Workout
+ * @package GT Spirit
  */
 
 /**
@@ -13,14 +13,14 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 	/**
 	 * Displays a custom Font control. Allows to switch fonts for particular elements on the theme.
 	 */
-	class GT_Workout_Customize_Font_Control extends WP_Customize_Control {
+	class GT_Spirit_Customize_Font_Control extends WP_Customize_Control {
 
 		/**
 		 * Declare the control type. Critical for JS constructor.
 		 *
 		 * @var string
 		 */
-		public $type = 'gt_workout_custom_font';
+		public $type = 'gt_spirit_custom_font';
 
 		/**
 		 * Localization Strings.
@@ -48,13 +48,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 
 			// Make Buttons translateable.
 			$this->l10n = array(
-				'previous' => esc_html__( 'Previous Font', 'gt-workout' ),
-				'next'     => esc_html__( 'Next Font', 'gt-workout' ),
-				'standard' => esc_html_x( 'Default', 'default font button', 'gt-workout' ),
+				'previous' => esc_html__( 'Previous Font', 'gt-spirit' ),
+				'next'     => esc_html__( 'Next Font', 'gt-spirit' ),
+				'standard' => esc_html_x( 'Default', 'default font button', 'gt-spirit' ),
 			);
 
 			// Set Fonts.
-			$this->fonts = GT_Workout_Custom_Fonts::get_fonts();
+			$this->fonts = GT_Spirit_Custom_Fonts::get_fonts();
 
 			parent::__construct( $manager, $id, $args );
 		}

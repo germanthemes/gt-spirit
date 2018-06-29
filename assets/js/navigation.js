@@ -1,4 +1,4 @@
-/* global gtWorkoutScreenReaderText */
+/* global gtSpiritScreenReaderText */
 /**
  * Theme functions file.
  *
@@ -12,8 +12,8 @@
 
 		// Add dropdown toggle that displays child menu items.
 		var dropdownToggle = $( '<button />', { 'class': 'dropdown-toggle', 'aria-expanded': false } )
-			.append( gtWorkoutScreenReaderText.icon )
-			.append( $( '<span />', { 'class': 'screen-reader-text', text: gtWorkoutScreenReaderText.expand } ) );
+			.append( gtSpiritScreenReaderText.icon )
+			.append( $( '<span />', { 'class': 'screen-reader-text', text: gtSpiritScreenReaderText.expand } ) );
 
 		container.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( dropdownToggle );
 
@@ -22,7 +22,7 @@
 			.addClass( 'toggled-on' )
 			.attr( 'aria-expanded', 'true' )
 			.find( '.screen-reader-text' )
-			.text( gtWorkoutScreenReaderText.collapse );
+			.text( gtSpiritScreenReaderText.collapse );
 
 		// Set the active submenu initial state.
 		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
@@ -37,7 +37,7 @@
 
 			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
 
-			screenReaderSpan.text( screenReaderSpan.text() === gtWorkoutScreenReaderText.expand ? gtWorkoutScreenReaderText.collapse : gtWorkoutScreenReaderText.expand );
+			screenReaderSpan.text( screenReaderSpan.text() === gtSpiritScreenReaderText.expand ? gtSpiritScreenReaderText.collapse : gtSpiritScreenReaderText.expand );
 		} );
 	}
 
@@ -59,7 +59,7 @@
 		// Add an initial value for the attribute.
 		menuToggle.attr( 'aria-expanded', 'false' );
 
-		menuToggle.on( 'click.gt_workout', function() {
+		menuToggle.on( 'click.gt_spirit', function() {
 			siteNavContain.toggleClass( 'toggled-on' );
 
 			$( this ).attr( 'aria-expanded', siteNavContain.hasClass( 'toggled-on' ) );
@@ -76,14 +76,14 @@
 		function toggleFocusClassTouchScreen() {
 			if ( 'none' === $( '.menu-toggle' ).css( 'display' ) ) {
 
-				$( document.body ).on( 'touchstart.gt_workout', function( e ) {
+				$( document.body ).on( 'touchstart.gt_spirit', function( e ) {
 					if ( ! $( e.target ).closest( '.main-navigation li' ).length ) {
 						$( '.main-navigation li' ).removeClass( 'focus' );
 					}
 				});
 
 				siteNavigation.find( '.menu-item-has-children > a, .page_item_has_children > a' )
-					.on( 'touchstart.gt_workout', function( e ) {
+					.on( 'touchstart.gt_spirit', function( e ) {
 						var el = $( this ).parent( 'li' );
 
 						if ( ! el.hasClass( 'focus' ) ) {
@@ -94,16 +94,16 @@
 					});
 
 			} else {
-				siteNavigation.find( '.menu-item-has-children > a, .page_item_has_children > a' ).unbind( 'touchstart.gt_workout' );
+				siteNavigation.find( '.menu-item-has-children > a, .page_item_has_children > a' ).unbind( 'touchstart.gt_spirit' );
 			}
 		}
 
 		if ( 'ontouchstart' in window ) {
-			$( window ).on( 'resize.gt_workout', toggleFocusClassTouchScreen );
+			$( window ).on( 'resize.gt_spirit', toggleFocusClassTouchScreen );
 			toggleFocusClassTouchScreen();
 		}
 
-		siteNavigation.find( 'a' ).on( 'focus.gt_workout blur.gt_workout', function() {
+		siteNavigation.find( 'a' ).on( 'focus.gt_spirit blur.gt_spirit', function() {
 			$( this ).parents( '.menu-item, .page_item' ).toggleClass( 'focus' );
 		});
 	})();

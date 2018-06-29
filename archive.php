@@ -5,14 +5,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @version 1.0
- * @package GT Workout
+ * @package GT Spirit
  */
 
 get_header();
 
 if ( have_posts() ) :
 
-	gt_workout_archive_header();
+	gt_spirit_archive_header();
 
 	while ( have_posts() ) :
 		the_post();
@@ -21,7 +21,7 @@ if ( have_posts() ) :
 
 	endwhile;
 
-	gt_workout_pagination();
+	gt_spirit_pagination();
 
 else :
 
