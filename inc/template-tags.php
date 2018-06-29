@@ -53,30 +53,7 @@ if ( ! function_exists( 'gt_spirit_header_image' ) ) :
 	 */
 	function gt_spirit_header_image() {
 
-		// Display featured image as header image on single posts.
-		if ( is_single() && has_post_thumbnail() && ( true === gt_spirit_get_option( 'post_image_single' ) || is_customize_preview() ) ) :
-		?>
-
-			<div id="headimg" class="header-image featured-header-image">
-
-				<?php the_post_thumbnail( 'gt-spirit-header-image' ); ?>
-
-			</div>
-
-		<?php
-		// Display featured image as header image on static pages.
-		elseif ( is_page() && has_post_thumbnail() ) :
-		?>
-
-			<div id="headimg" class="header-image featured-header-image">
-
-				<?php the_post_thumbnail( 'gt-spirit-header-image' ); ?>
-
-			</div>
-
-		<?php
-		// Display header image.
-		elseif ( has_header_image() ) :
+		if ( has_header_image() ) :
 		?>
 
 			<div id="headimg" class="header-image default-header-image">
@@ -143,6 +120,26 @@ if ( ! function_exists( 'gt_spirit_post_image_archives' ) ) :
 				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
 					<?php the_post_thumbnail(); ?>
 				</a>
+			</div>
+
+		<?php
+		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_post_image_single' ) ) :
+	/**
+	 * Displays the featured image on single posts
+	 */
+	function gt_spirit_post_image_single() {
+
+		// Display Post Thumbnail if activated.
+		if ( true === gt_spirit_get_option( 'post_image_single' ) && has_post_thumbnail() ) :
+		?>
+
+			<div class="post-image">
+				<?php the_post_thumbnail( 'gt-spirit-header-image' ); ?>
 			</div>
 
 		<?php

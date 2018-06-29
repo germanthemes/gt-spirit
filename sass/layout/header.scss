@@ -1,19 +1,19 @@
 .site-header {
 	@include background(--header-background-color);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+	border-bottom: 1px solid var(--header-border-color);
 }
 
 .header-main {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 1.25rem;
-	padding-bottom: 1.25rem;
 }
 
 /* Site Branding */
 .site-branding {
 	display: flex;
 	margin: 0;
-	padding: 0;
+	padding: 0.5rem 1rem;
 	max-width: 100%;
 	flex-direction: column;
 	justify-content: center;
@@ -41,7 +41,7 @@
 	padding: 0;
 	@include color(--header-text-color);
 	text-decoration: none;
-	@include font-size(24);
+	@include font-size(22);
 	@include font-family(--title-font);
 	@include font-weight(--title-font-weight);
 	@include text-transform(--title-text-transform);
@@ -63,7 +63,7 @@
 	margin: 0;
 	padding: 0;
 	@include color(--header-text-color);
-	@include font-size(13);
+	@include font-size(12);
 }
 
 /* Custom Header Image */

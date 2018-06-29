@@ -13,11 +13,11 @@ $themeColors: (
 	--button-text-color        : #fff,
 	--button-hover-color       : #dd2222,
 	--button-hover-text-color  : #fff,
-	--header-background-color  : #282828,
-	--header-text-color        : #fff,
-	--header-hover-text-color  : rgba(255, 255, 255, 0.5),
-	--header-border-color      : rgba(255, 255, 255, 0.05),
-	--submenu-color            : #ee3333,
+	--header-background-color  : #fff,
+	--header-text-color        : #252525,
+	--header-hover-text-color  : rgba(0, 0, 0, 0.6),
+	--header-border-color      : rgba(0, 0, 0, 0.075),
+	--submenu-color            : #252525,
 	--submenu-text-color       : #fff,
 	--submenu-hover-text-color : rgba(255, 255, 255, 0.5),
 	--title-color              : #282828,
@@ -39,13 +39,13 @@ $themeFonts: (
 
 // Font Weight.
 $fontWeight: (
-	--title-font-weight : bold,
-	--navi-font-weight  : bold,
+	--title-font-weight : normal,
+	--navi-font-weight  : normal,
 );
 
 // Text Transform.
 $textTransform: (
-	--title-text-transform : none,
+	--title-text-transform : uppercase,
 	--navi-text-transform  : none,
 );
 
