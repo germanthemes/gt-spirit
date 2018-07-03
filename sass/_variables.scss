@@ -3,29 +3,29 @@ $themeWidth: 1440px;
 $contentWidth: 720px;
 
 // Text Color
-$textColor: #282828;
+$textColor: #252525;
 
 // Theme Colors
 $themeColors: (
-	--link-color               : #ee3333,
-	--link-hover-color         : #dd2222,
-	--button-color             : #ee3333,
+	--link-color               : #009966,
+	--link-hover-color         : #252525,
+	--button-color             : #009966,
 	--button-text-color        : #fff,
-	--button-hover-color       : #dd2222,
+	--button-hover-color       : #252525,
 	--button-hover-text-color  : #fff,
 	--header-background-color  : #fff,
 	--header-text-color        : #252525,
-	--header-hover-text-color  : rgba(0, 0, 0, 0.6),
+	--header-hover-text-color  : #009966,
 	--header-border-color      : rgba(0, 0, 0, 0.075),
 	--submenu-color            : #252525,
 	--submenu-text-color       : #fff,
 	--submenu-hover-text-color : rgba(255, 255, 255, 0.5),
-	--title-color              : #282828,
-	--title-hover-color        : #ee3333,
-	--footer-color             : #282828,
-	--footer-text-color        : #fff,
-	--footer-hover-text-color  : rgba(255, 255, 255, 0.5),
-	--footer-border-color      : rgba(255, 255, 255, 0.035),
+	--title-color              : #252525,
+	--title-hover-color        : #009966,
+	--footer-color             : #fff,
+	--footer-text-color        : #252525,
+	--footer-hover-text-color  : rgba(0, 0, 0, 0.5),
+	--footer-border-color      : rgba(0, 0, 0, 0.075),
 );
 
 // Theme Fonts

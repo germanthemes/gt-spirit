@@ -113,9 +113,9 @@
 }
 
 .menu-toggle .icon {
-	margin: 0;
-	width: 28px;
-	height: 28px;
+	margin: 0.2rem 0 0;
+	width: 24px;
+	height: 24px;
 	vertical-align: top;
 	@include fill(--header-text-color);
 }
@@ -140,7 +140,7 @@
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1rem 1.5rem;
+	padding: 1.05rem 1.5rem;
 	background: none;
 }
 
@@ -181,4 +181,10 @@
 .main-navigation ul ul .dropdown-toggle .icon {
 	width: 18px;
 	height: 18px;
+	@include fill(--submenu-text-color);
+}
+
+.main-navigation ul ul .dropdown-toggle:hover .icon,
+.main-navigation ul ul .dropdown-toggle:active .icon {
+	@include fill(--submenu-hover-text-color);
 }

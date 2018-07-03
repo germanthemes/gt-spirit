@@ -1,23 +1,26 @@
 .site-footer {
 	@include font-size(15);
-	@include font-family(--navi-font);
-	@include color(--footer-hover-text-color);
+	@include color(--footer-text-color);
 	@include background(--footer-color);
+	border-top: 1px solid rgba(0, 0, 0, 0.075);
+	border-top: 1px solid var(--footer-border-color);
 }
 
+.site-footer a,
 .site-footer a:link,
 .site-footer a:visited {
 	@include color(--footer-text-color);
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .site-footer a:hover,
 .site-footer a:active {
-	text-decoration: underline;
+	@include color(--footer-hover-text-color);
+	text-decoration: none;
 }
 
 .site-footer .site-info {
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	text-align: center;
 }

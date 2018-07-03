@@ -12,8 +12,8 @@
 	padding: 0.35em 1em;
 	text-align: center;
 	text-decoration: none;
-	@include color(--button-text-color);
-	@include background(--button-color);
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
 }
 
 .pagination .page-numbers.dots {
@@ -23,6 +23,6 @@
 .pagination .current,
 .pagination a:hover,
 .pagination a:active {
-	@include color(--button-hover-text-color);
-	@include background(--button-hover-color);
+	@include color(--button-text-color);
+	@include background(--button-color);
 }
