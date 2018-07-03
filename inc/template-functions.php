@@ -37,13 +37,13 @@ function gt_spirit_body_classes( $classes ) {
 	}
 
 	// Featured Images?
-	if ( false === $theme_options['post_image_archives'] ) {
-		$classes[] = 'post-images-hidden';
+	if ( true === $theme_options['post_image_archives'] ) {
+		$classes[] = 'post-images-displayed';
 	}
 
 	// Single Featured Image?
-	if ( false === $theme_options['post_image_single'] && is_single() ) {
-		$classes[] = 'post-image-hidden';
+	if ( true === $theme_options['post_image_single'] && is_single() ) {
+		$classes[] = 'post-image-displayed';
 	}
 
 	// Adds a class of hfeed to non-singular pages.

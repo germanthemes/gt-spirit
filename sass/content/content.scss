@@ -47,7 +47,8 @@
 }
 
 /* Entry Header with Featured Image */
-.has-post-thumbnail .featured-image-container .post-image {
+body.page .has-post-thumbnail .featured-image-container .post-image,
+body.post-image-displayed .has-post-thumbnail .featured-image-container .post-image {
 	margin-top: -1px;
 	margin-left: calc( -100vw / 2 + 100% / 2 );
 	margin-right: calc( -100vw / 2 + 100% / 2 );
@@ -57,10 +58,6 @@
 /* Entry Content */
 .entry-content {
 	@include font-size(17);
-}
-
-.entry-content > p:first-child {
-	margin-top: 0;
 }
 
 .entry-content > .alignwide,

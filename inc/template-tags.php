@@ -53,7 +53,8 @@ if ( ! function_exists( 'gt_spirit_header_image' ) ) :
 	 */
 	function gt_spirit_header_image() {
 
-		if ( has_header_image() ) :
+		// Do not show header image on single posts and static pages.
+		if ( false === is_singular() && has_header_image() ) :
 		?>
 
 			<div id="headimg" class="header-image default-header-image">

@@ -14,10 +14,6 @@
 	@include text-transform(--navi-text-transform);
 }
 
-.main-navigation > ul {
-	margin-top: 1.5rem;
-}
-
 /* Hide the menu on small screens when JavaScript is available. */
 .main-navigation ul,
 .main-navigation .menu-item-has-children > a > .icon,

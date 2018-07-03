@@ -80,10 +80,10 @@
 	// Post Thumbnails checkbox.
 	wp.customize( 'gt_spirit_theme_options[post_image_archives]', function( value ) {
 		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'post-images-hidden' );
+			if ( true === newval ) {
+				$( 'body' ).addClass( 'post-images-displayed' );
 			} else {
-				$( 'body' ).removeClass( 'post-images-hidden' );
+				$( 'body' ).removeClass( 'post-images-displayed' );
 			}
 		} );
 	} );
@@ -91,12 +91,10 @@
 	// Single Post Thumbnail checkbox.
 	wp.customize( 'gt_spirit_theme_options[post_image_single]', function( value ) {
 		value.bind( function( newval ) {
-			if ( false === newval ) {
-				$( 'body' ).addClass( 'post-image-hidden' );
-				hideElement( '.single-post .featured-header-image' );
+			if ( true === newval ) {
+				$( 'body' ).addClass( 'post-image-displayed' );
 			} else {
-				$( 'body' ).removeClass( 'post-image-hidden' );
-				showElement( '.single-post .featured-header-image' );
+				$( 'body' ).removeClass( 'post-image-displayed' );
 			}
 		} );
 	} );
