@@ -52,11 +52,19 @@
 	@include color(--header-hover-text-color);
 }
 
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: underline;
+}
+
 /* Submenus */
 .main-navigation ul ul {
-	padding: 0.5rem 0.75rem;
+	padding-left: 0.75rem;
 	@include font-size(16);
 	@include background(--submenu-color);
+}
+
+.main-navigation ul ul ul {
+	padding-left: 1.5rem;
 }
 
 .main-navigation ul ul.toggled-on {
@@ -64,7 +72,6 @@
 }
 
 .main-navigation ul ul a {
-	padding: 0.75rem 1rem;
 	border: none;
 }
 
@@ -140,7 +147,7 @@
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1.05rem 1.5rem;
+	padding: 1rem 1.5rem;
 	background: none;
 }
 
@@ -175,7 +182,7 @@
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 0.8rem 1.2rem;
+	padding: 1rem 1.25rem;
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {

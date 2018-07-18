@@ -44,7 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--containerWidth: 1440px;
+	--containerWidth: 1260px;
 	--contentWidth: 720px;
 	--link-color: #009966;
 	--link-hover-color: #252525;
@@ -719,7 +719,7 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	max-width: 1440px;
+	max-width: 1260px;
 	max-width: var(--containerWidth);
 }
 
@@ -881,13 +881,21 @@ textarea {
 	color: var(--header-hover-text-color);
 }
 
+.main-navigation ul li.current-menu-item > a {
+	text-decoration: underline;
+}
+
 /* Submenus */
 .main-navigation ul ul {
-	padding: 0.5rem 0.75rem;
+	padding-left: 0.75rem;
 	font-size: 16px;
 	font-size: 1rem;
 	background: #252525;
 	background: var(--submenu-color);
+}
+
+.main-navigation ul ul ul {
+	padding-left: 1.5rem;
 }
 
 .main-navigation ul ul.toggled-on {
@@ -895,7 +903,6 @@ textarea {
 }
 
 .main-navigation ul ul a {
-	padding: 0.75rem 1rem;
 	border: none;
 }
 
@@ -982,7 +989,7 @@ textarea {
 	display: block;
 	top: 0;
 	right: 0;
-	padding: 1.05rem 1.5rem;
+	padding: 1rem 1.5rem;
 	background: none;
 }
 
@@ -1020,7 +1027,7 @@ textarea {
 }
 
 .main-navigation ul ul .dropdown-toggle {
-	padding: 0.8rem 1.2rem;
+	padding: 1rem 1.25rem;
 }
 
 .main-navigation ul ul .dropdown-toggle .icon {
@@ -1457,6 +1464,11 @@ object {
 	background-color: #151515;
 }
 
+/* Cover Image Block */
+.wp-block-cover-image.alignwide {
+	width: auto;
+}
+
 /*--------------------------------------------------------------
 # - Media Queries
 --------------------------------------------------------------*/
@@ -1686,6 +1698,7 @@ object {
 		left: -999em;
 		top: 100%;
 		z-index: 99999;
+		padding: 0;
 	}
 
 	.main-navigation ul ul li:hover > ul,
@@ -1708,6 +1721,7 @@ object {
 		left: -999em;
 		margin-top: 0;
 		top: 0;
+		padding: 0;
 	}
 
 	/* Dropdown Icons */
@@ -1716,9 +1730,9 @@ object {
 		position: relative;
 		display: inline;
 		left: 0.5rem;
-		top: 0.15rem;
-		width: 15px;
-		height: 15px;
+		top: 0.1rem;
+		width: 13px;
+		height: 13px;
 		fill: #252525;
 		fill: var(--header-text-color);
 	}
@@ -1735,7 +1749,7 @@ object {
 		left: auto;
 		right: 1em;
 		top: 50%;
-		margin-top: -0.5rem;
+		margin-top: -0.4rem;
 		-webkit-transform: rotate(-90deg);
 		/* Chrome, Safari, Opera */
 		-ms-transform: rotate(-90deg);
@@ -1809,9 +1823,9 @@ object {
 	}
 }
 
-@media only screen and (min-width: calc( 1440px - 3rem)) {
+@media only screen and (min-width: calc( 1260px - 3rem)) {
 	.entry-content > .alignwide {
-		margin-left: calc( ( -1440px + 3rem + 720px ) / 2);
-		margin-right: calc( ( -1440px + 3rem + 720px ) / 2);
+		margin-left: calc( ( -1260px + 3rem + 720px ) / 2);
+		margin-right: calc( ( -1260px + 3rem + 720px ) / 2);
 	}
 }
