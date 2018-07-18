@@ -1,7 +1,9 @@
 .site-header {
 	@include background(--header-background-color);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-	border-bottom: 1px solid var(--header-border-color);
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0, 0, 0, 0.075);
+	border-bottom-width: 1px;
+	border-bottom-width: var(--header-border-width);
 }
 
 .header-main {

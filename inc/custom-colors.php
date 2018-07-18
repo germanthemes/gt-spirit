@@ -46,7 +46,7 @@ class GT_Spirit_Custom_Colors {
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['link_color'] ) ) {
-				$color_variables .= '--button-text-color: #202020;';
+				$color_variables .= '--button-text-color: #252525;';
 			}
 		}
 
@@ -57,7 +57,7 @@ class GT_Spirit_Custom_Colors {
 
 			// Check if a light background color was chosen.
 			if ( self::is_color_light( $theme_options['link_hover_color'] ) ) {
-				$color_variables .= '--button-hover-text-color: #202020;';
+				$color_variables .= '--button-hover-text-color: #252525;';
 			}
 		}
 
@@ -66,22 +66,21 @@ class GT_Spirit_Custom_Colors {
 			$color_variables .= '--header-background-color: ' . $theme_options['header_color'] . ';';
 
 			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['header_color'] ) ) {
-				$color_variables .= '--header-text-color: #282828;';
-				$color_variables .= '--header-hover-text-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--header-border-color: rgba(0, 0, 0, 0.075);';
+			if ( self::is_color_dark( $theme_options['header_color'] ) ) {
+				$color_variables .= '--header-text-color: #ffffff;';
+				$color_variables .= '--header-border-width: 0;';
 			}
 		}
 
 		// Set Navigation Submenu Color.
-		if ( $theme_options['submenu_color'] !== $default['submenu_color'] ) {
-			$color_variables .= '--submenu-color: ' . $theme_options['submenu_color'] . ';';
+		if ( $theme_options['navi_color'] !== $default['navi_color'] ) {
+			$color_variables .= '--header-hover-text-color: ' . $theme_options['navi_color'] . ';';
+			$color_variables .= '--submenu-color: ' . $theme_options['navi_color'] . ';';
 
 			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['submenu_color'] ) ) {
-				$color_variables .= '--submenu-text-color: #202020;';
+			if ( self::is_color_light( $theme_options['navi_color'] ) ) {
+				$color_variables .= '--submenu-text-color: #252525;';
 				$color_variables .= '--submenu-hover-text-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--submenu-border-color: rgba(0, 0, 0, 0.1);';
 			}
 		}
 
@@ -100,10 +99,10 @@ class GT_Spirit_Custom_Colors {
 			$color_variables .= '--footer-color: ' . $theme_options['footer_color'] . ';';
 
 			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['footer_color'] ) ) {
-				$color_variables .= '--footer-text-color: #202020;';
-				$color_variables .= '--footer-hover-text-color: rgba(0, 0, 0, 0.5);';
-				$color_variables .= '--footer-border-color: rgba(0, 0, 0, 0.05);';
+			if ( self::is_color_dark( $theme_options['footer_color'] ) ) {
+				$color_variables .= '--footer-text-color: #ffffff;';
+				$color_variables .= '--footer-hover-text-color: rgba(255, 255, 255, 0.5);';
+				$color_variables .= '--footer-border-color: rgba(255, 255, 255, 0.035);';
 			}
 		}
 

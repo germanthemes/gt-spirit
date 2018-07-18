@@ -73,17 +73,17 @@ function gt_spirit_customize_register_color_settings( $wp_customize ) {
 	) );
 
 	// Add Navigation Secondary Color setting.
-	$wp_customize->add_setting( 'gt_spirit_theme_options[submenu_color]', array(
-		'default'           => $default['submenu_color'],
+	$wp_customize->add_setting( 'gt_spirit_theme_options[navi_color]', array(
+		'default'           => $default['navi_color'],
 		'type'              => 'option',
 		'transport'         => 'postMessage',
 		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control(
-		$wp_customize, 'gt_spirit_theme_options[submenu_color]', array(
-			'label'    => esc_html_x( 'Navigation Submenus', 'Color Settings', 'gt-spirit' ),
+		$wp_customize, 'gt_spirit_theme_options[navi_color]', array(
+			'label'    => esc_html_x( 'Navigation', 'Color Settings', 'gt-spirit' ),
 			'section'  => 'gt_spirit_section_colors',
-			'settings' => 'gt_spirit_theme_options[submenu_color]',
+			'settings' => 'gt_spirit_theme_options[navi_color]',
 			'priority' => 40,
 		)
 	) );

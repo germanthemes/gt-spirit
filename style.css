@@ -55,8 +55,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-background-color: #fff;
 	--header-text-color: #252525;
 	--header-hover-text-color: #009966;
-	--header-border-color: rgba(0, 0, 0, 0.075);
-	--submenu-color: #252525;
+	--header-border-width: 1px;
+	--submenu-color: #009966;
 	--submenu-text-color: #fff;
 	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
 	--title-color: #252525;
@@ -729,8 +729,10 @@ textarea {
 .site-header {
 	background: #fff;
 	background: var(--header-background-color);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.075);
-	border-bottom: 1px solid var(--header-border-color);
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0, 0, 0, 0.075);
+	border-bottom-width: 1px;
+	border-bottom-width: var(--header-border-width);
 }
 
 .header-main {
@@ -890,7 +892,7 @@ textarea {
 	padding-left: 0.75rem;
 	font-size: 16px;
 	font-size: 1rem;
-	background: #252525;
+	background: #009966;
 	background: var(--submenu-color);
 }
 
@@ -1105,6 +1107,7 @@ textarea {
 body.page .has-post-thumbnail .featured-image-container .post-image,
 body.post-image-displayed .has-post-thumbnail .featured-image-container .post-image {
 	margin-top: -1px;
+	margin-top: calc( var(--header-border-width) * -1);
 	margin-left: calc( -100vw / 2 + 100% / 2);
 	margin-right: calc( -100vw / 2 + 100% / 2);
 	max-width: 100vw;

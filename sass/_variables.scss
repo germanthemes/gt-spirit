@@ -16,8 +16,8 @@ $themeColors: (
 	--header-background-color  : #fff,
 	--header-text-color        : #252525,
 	--header-hover-text-color  : #009966,
-	--header-border-color      : rgba(0, 0, 0, 0.075),
-	--submenu-color            : #252525,
+	--header-border-width      : 1px,
+	--submenu-color            : #009966,
 	--submenu-text-color       : #fff,
 	--submenu-hover-text-color : rgba(255, 255, 255, 0.5),
 	--title-color              : #252525,
@@ -61,7 +61,7 @@ $textTransform: (
 	--header-background-color: map-get($themeColors, --header-background-color);
 	--header-text-color: map-get($themeColors, --header-text-color);
 	--header-hover-text-color: map-get($themeColors, --header-hover-text-color);
-	--header-border-color: map-get($themeColors, --header-border-color);
+	--header-border-width: map-get($themeColors, --header-border-width);
 	--submenu-color: map-get($themeColors, --submenu-color);
 	--submenu-text-color: map-get($themeColors, --submenu-text-color);
 	--submenu-hover-text-color: map-get($themeColors, --submenu-hover-text-color);
