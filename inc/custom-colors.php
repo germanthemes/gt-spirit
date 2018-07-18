@@ -68,6 +68,7 @@ class GT_Spirit_Custom_Colors {
 			// Check if a light background color was chosen.
 			if ( self::is_color_dark( $theme_options['header_color'] ) ) {
 				$color_variables .= '--header-text-color: #ffffff;';
+				$color_variables .= '--header-border-color: rgba(255, 255, 255, 0.1);';
 				$color_variables .= '--header-border-width: 0;';
 			}
 		}

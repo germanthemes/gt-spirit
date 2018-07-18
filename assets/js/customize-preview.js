@@ -143,18 +143,21 @@
 	/* Header Color Option */
 	wp.customize( 'gt_spirit_theme_options[header_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, border_width;
+			var text_color, border_color, border_width;
 
 			if( isColorLight( newval ) ) {
 				text_color = '#252525';
+				border_color = 'rgba(0, 0, 0, 0.075)';
 				border_width = '1px';
 			} else {
 				text_color = '#ffffff';
+				border_color = 'rgba(255, 255, 255, 0.1)';
 				border_width = '0';
 			}
 
 			document.documentElement.style.setProperty( '--header-background-color', newval );
 			document.documentElement.style.setProperty( '--header-text-color', text_color );
+			document.documentElement.style.setProperty( '--header-border-color', border_color );
 			document.documentElement.style.setProperty( '--header-border-width', border_width );
 		} );
 	} );

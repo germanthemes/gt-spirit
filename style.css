@@ -55,6 +55,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--header-background-color: #fff;
 	--header-text-color: #252525;
 	--header-hover-text-color: #009966;
+	--header-border-color: rgba(0, 0, 0, 0.075);
 	--header-border-width: 1px;
 	--submenu-color: #009966;
 	--submenu-text-color: #fff;
@@ -865,7 +866,7 @@ textarea {
 	display: block;
 	margin: 0;
 	padding: 1rem;
-	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-top: 1px solid rgba(0, 0, 0, 0.075);
 	border-top: 1px solid var(--header-border-color);
 	text-decoration: none;
 }
