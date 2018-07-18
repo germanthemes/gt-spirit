@@ -97,12 +97,12 @@ class GT_Spirit_Custom_Fonts {
 		// Get selected fonts.
 		$fonts = self::get_selected_fonts();
 
-		if ( in_array( 'Arimo', $fonts, true ) ) {
-			wp_enqueue_style( 'gt-spirit-arimo-font', get_theme_file_uri( '/assets/css/arimo.css' ), array(), '11.0' );
+		if ( in_array( 'Quicksand', $fonts, true ) ) {
+			wp_enqueue_style( 'gt-spirit-quicksand-font', get_theme_file_uri( '/assets/css/quicksand.css' ), array(), '7.0' );
 		}
 
-		if ( in_array( 'Nunito', $fonts, true ) ) {
-			wp_enqueue_style( 'gt-spirit-nunito-font', get_theme_file_uri( '/assets/css/nunito.css' ), array(), '9.0' );
+		if ( in_array( 'Raleway', $fonts, true ) ) {
+			wp_enqueue_style( 'gt-spirit-raleway-font', get_theme_file_uri( '/assets/css/raleway.css' ), array(), '12.0' );
 		}
 	}
 
@@ -135,7 +135,7 @@ class GT_Spirit_Custom_Fonts {
 		$selected_fonts = self::get_selected_fonts();
 
 		// Remove default fonts.
-		$selected_fonts = array_diff( $selected_fonts, array( 'Arimo', 'Nunito' ) );
+		$selected_fonts = array_diff( $selected_fonts, array( 'Quicksand', 'Raleway' ) );
 
 		add_theme_support( 'gt-typography', array(
 			'selected_fonts' => $selected_fonts,
