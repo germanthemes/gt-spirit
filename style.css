@@ -1410,17 +1410,63 @@ object {
 # - Blocks
 --------------------------------------------------------------*/
 
-/* Block Colors */
+/* Cover Image Block */
+.wp-block-cover-image.alignwide,
+.wp-block-cover-image.alignfull {
+	width: auto;
+}
+
+/* GT Buttons */
+.is-style-gt-button a {
+	display: inline-block;
+	padding: 0.4rem 1rem;
+	color: #fff;
+	color: var(--button-text-color);
+	background: #009966;
+	background: var(--button-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+	border-radius: 0.5rem;
+}
+
+.is-style-gt-button a:link,
+.is-style-gt-button a:visited {
+	color: #fff;
+	color: var(--button-text-color);
+	text-decoration: none;
+}
+
+.is-style-gt-button a:hover,
+.is-style-gt-button a:active {
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background: #252525;
+	background: var(--button-hover-color);
+	text-decoration: none;
+}
+
+/* GT Headings */
+h2.is-style-gt-heading-large {
+	font-size: 40px;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+/* Block Text Colors */
 .has-primary-color {
-	color: #0c557a;
+	color: #006699;
 }
 
 .has-secondary-color {
-	color: #ff6600;
+	color: #ee9922;
 }
 
 .has-accent-color {
-	color: #a156b4;
+	color: #11bb55;
+}
+
+.has-complementary-color {
+	color: #bb4411;
 }
 
 .has-white-color {
@@ -1432,24 +1478,28 @@ object {
 }
 
 .has-dark-gray-color {
-	color: #444444;
+	color: #555555;
 }
 
 .has-black-color {
-	color: #151515;
+	color: #242424;
 }
 
 /* Block Background Colors */
 .has-primary-background-color {
-	background-color: #0c557a;
+	background-color: #006699;
 }
 
 .has-secondary-background-color {
-	background-color: #ff6600;
+	background-color: #ee9922;
 }
 
 .has-accent-background-color {
-	background-color: #a156b4;
+	background-color: #11bb55;
+}
+
+.has-complementary-background-color {
+	background-color: #bb4411;
 }
 
 .has-white-background-color {
@@ -1461,16 +1511,28 @@ object {
 }
 
 .has-dark-gray-background-color {
-	background-color: #444444;
+	background-color: #555555;
 }
 
 .has-black-background-color {
-	background-color: #151515;
+	background-color: #242424;
 }
 
-/* Cover Image Block */
-.wp-block-cover-image.alignwide {
-	width: auto;
+/* Block Font Sizes */
+.has-small-font-size {
+	font-size: 16px;
+}
+
+.has-medium-font-size {
+	font-size: 20px;
+}
+
+.has-large-font-size {
+	font-size: 24px;
+}
+
+.has-extra-large-font-size {
+	font-size: 36px;
 }
 
 /*--------------------------------------------------------------
