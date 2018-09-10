@@ -21,22 +21,22 @@ function gt_spirit_gutenberg_support() {
 		array(
 			'name'  => esc_html_x( 'Primary', 'block color', 'gt-spirit' ),
 			'slug'  => 'primary',
-			'color' => '#006699',
+			'color' => '#009966',
 		),
 		array(
 			'name'  => esc_html_x( 'Secondary', 'block color', 'gt-spirit' ),
 			'slug'  => 'secondary',
-			'color' => '#ee9922',
+			'color' => '#2CBE95',
 		),
 		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'gt-spirit' ),
 			'slug'  => 'accent',
-			'color' => '#11bb55',
+			'color' => '#F4DD49',
 		),
 		array(
 			'name'  => esc_html_x( 'Complementary', 'block color', 'gt-spirit' ),
 			'slug'  => 'complementary',
-			'color' => '#bb4411',
+			'color' => '#CF3B46',
 		),
 		array(
 			'name'  => esc_html_x( 'White', 'block color', 'gt-spirit' ),
