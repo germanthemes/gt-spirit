@@ -27,9 +27,9 @@
 	--footer-hover-text-color: rgba(0, 0, 0, 0.5);
 	--footer-border-color: rgba(0, 0, 0, 0.075);
 	--block-primary-color: #009966;
-	--block-secondary-color: #2CBE95;
-	--block-accent-color: #F4DD49;
-	--block-complementary-color: #CF3B46;
+	--block-secondary-color: #2cbe95;
+	--block-accent-color: #f4dd49;
+	--block-complementary-color: #cf3b46;
 	--text-font: Quicksand, Arial, Helvetica;
 	--title-font: Raleway, Tahoma, Arial;
 	--title-font-weight: normal;
@@ -166,17 +166,17 @@ h2.is-style-gt-heading-large {
 }
 
 .has-secondary-color {
-	color: #2CBE95;
+	color: #2cbe95;
 	color: var(--block-secondary-color);
 }
 
 .has-accent-color {
-	color: #F4DD49;
+	color: #f4dd49;
 	color: var(--block-accent-color);
 }
 
 .has-complementary-color {
-	color: #CF3B46;
+	color: #cf3b46;
 	color: var(--block-complementary-color);
 }
 
@@ -203,17 +203,17 @@ h2.is-style-gt-heading-large {
 }
 
 .has-secondary-background-color {
-	background-color: #2CBE95;
+	background-color: #2cbe95;
 	background-color: var(--block-secondary-color);
 }
 
 .has-accent-background-color {
-	background-color: #F4DD49;
+	background-color: #f4dd49;
 	background-color: var(--block-accent-color);
 }
 
 .has-complementary-background-color {
-	background-color: #CF3B46;
+	background-color: #cf3b46;
 	background-color: var(--block-complementary-color);
 }
 

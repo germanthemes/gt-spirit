@@ -13,6 +13,9 @@
  */
 function gt_spirit_gutenberg_support() {
 
+	// Get theme options from database.
+	$theme_options = gt_spirit_theme_options();
+
 	// Add theme support for wide and full images.
 	add_theme_support( 'align-wide' );
 
@@ -21,22 +24,22 @@ function gt_spirit_gutenberg_support() {
 		array(
 			'name'  => esc_html_x( 'Primary', 'block color', 'gt-spirit' ),
 			'slug'  => 'primary',
-			'color' => '#009966',
+			'color' => esc_html( $theme_options['block_primary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Secondary', 'block color', 'gt-spirit' ),
 			'slug'  => 'secondary',
-			'color' => '#2CBE95',
+			'color' => esc_html( $theme_options['block_secondary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Accent', 'block color', 'gt-spirit' ),
 			'slug'  => 'accent',
-			'color' => '#F4DD49',
+			'color' => esc_html( $theme_options['block_accent_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Complementary', 'block color', 'gt-spirit' ),
 			'slug'  => 'complementary',
-			'color' => '#CF3B46',
+			'color' => esc_html( $theme_options['block_complementary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'White', 'block color', 'gt-spirit' ),

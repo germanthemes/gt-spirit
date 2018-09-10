@@ -17,7 +17,7 @@ function gt_spirit_customize_register_post_settings( $wp_customize ) {
 	// Add Sections for Post Settings.
 	$wp_customize->add_section( 'gt_spirit_section_posts', array(
 		'title'    => esc_html_x( 'Posts', 'Post Settings', 'gt-spirit' ),
-		'priority' => 20,
+		'priority' => 10,
 		'panel'    => 'gt_spirit_options_panel',
 	) );
 
