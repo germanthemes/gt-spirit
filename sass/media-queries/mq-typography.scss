@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40em) {
+@media only screen and (min-width: 640px) {
 	body,
 	button,
 	input,
@@ -37,7 +37,7 @@
 	}
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 960px) {
 	.site-title {
 		@include font-size(26);
 	}
