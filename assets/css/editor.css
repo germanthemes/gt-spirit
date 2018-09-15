@@ -4,7 +4,7 @@
  * @package GT Spirit
  */
 :root {
-	--containerWidth: 1260px;
+	--containerWidth: 1200px;
 	--contentWidth: 720px;
 	--link-color: #009966;
 	--link-hover-color: #252525;

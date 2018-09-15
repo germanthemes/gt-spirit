@@ -3,13 +3,17 @@
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	background: #fff;
 	overflow: hidden;
 }
 
-.container {
+.site-content {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.site-main {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0;
-	max-width: $themeWidth;
-	max-width: var(--containerWidth);
+	max-width: $contentWidth;
 }

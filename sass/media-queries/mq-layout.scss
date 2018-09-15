@@ -3,10 +3,11 @@
         padding-left: 1.25rem;
         padding-right: 1.25rem;
     }
-
-    .site-content {
-    	grid-column-gap: 1.25rem;
-    }
+	
+	.site-content {
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
 }
 
 @media only screen and (min-width: 800px) {
@@ -58,7 +59,7 @@
     	margin: 1.5rem 0;
     }
 
-    .site-footer .site-info {
+    .site-footer .footer-main {
     	padding-top: 1.25rem;
     	padding-bottom: 1.25rem;
     }
