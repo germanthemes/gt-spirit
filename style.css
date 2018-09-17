@@ -44,8 +44,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--containerWidth: 1200px;
-	--contentWidth: 720px;
 	--link-color: #009966;
 	--link-hover-color: #252525;
 	--button-color: #009966;
