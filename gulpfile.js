@@ -68,9 +68,23 @@ gulp.task( 'editor', function() {
         .pipe( gulp.dest( 'assets/css' ) )
 });
 
+// Editor Sass Bundler
+gulp.task( 'editor-style', function() {
+    return gulp.src( 'sass/editor-style.scss' )
+        .pipe( sass( { outputStyle: 'expanded' } ).on( 'error', sass.logError ) )
+		.pipe( rename( 'editor-style.css' ) )
+		.pipe( postcss( [ sorting() ] ) )
+		.pipe( replace( '  ', '	' ) )
+		.pipe( replace( '}\n	', '}\n\n	' ) )
+		.pipe( replace( '}\n\n	}', '}\n	}' ) )
+		.pipe( replace( '*/\n/*', '*/\n\n/*' ) )
+		.pipe( replace( ';\n	/*', '; /*' ) )
+        .pipe( gulp.dest( 'assets/css' ) )
+});
+
 // Sass Watch
 gulp.task('sass:watch', function () {
-	gulp.watch( 'sass/**/*.scss', ['sass', 'editor']);
+	gulp.watch( 'sass/**/*.scss', ['sass', 'editor', 'editor-style']);
 });
 
 // Lint CSS

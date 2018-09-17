@@ -1,12 +1,4 @@
 @media only screen and (min-width: 640px) {
-	body,
-	button,
-	input,
-	select,
-	textarea {
-		@include font-size(17);
-	}
-
 	.site-title {
 		@include font-size(24);
 	}
@@ -17,10 +9,6 @@
 
 	.entry-title {
 		@include font-size(28);
-	}
-
-	.entry-content {
-		@include font-size(18);
 	}
 
 	.entry-meta,
@@ -50,9 +38,5 @@
 	.more-link,
 	.pagination {
 		@include font-size(17);
-	}
-
-	.entry-content {
-		@include font-size(19);
 	}
 }
