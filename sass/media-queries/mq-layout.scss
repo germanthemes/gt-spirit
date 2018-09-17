@@ -95,5 +95,11 @@
 
     .pagination {
         margin: 2rem 0;
-    }
+	}
+	
+	.entry-content > .alignwide {
+		margin-left: -160px;
+		margin-right: -160px;
+		max-width: $wideWidth;
+	}
 }
