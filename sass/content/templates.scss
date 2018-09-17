@@ -1,0 +1,44 @@
+/* Wide Page Layout */
+body.wide-page-layout .site-content .site-main {
+	max-width: $wideWidth;
+}
+
+/* Fullwidth Page Layout */
+body.fullwidth-page-layout .site-content .site-main {
+	max-width: $themeWidth;
+}
+
+/* Adjust Page Titles */
+@media only screen and (min-width: 880px) {
+    body.page.wide-page-layout .has-post-thumbnail .featured-image-container {
+    	grid-template-columns: 1fr minmax(0, $wideWidth) 1fr;
+	}
+	
+	body.page.wide-page-layout .has-post-thumbnail .featured-image-container .page-header-container {
+        grid-template-columns: 1fr 1.5rem minmax(0, $wideWidth) 1.5rem;
+	}
+
+	body.page.fullwidth-page-layout .has-post-thumbnail .featured-image-container {
+    	grid-template-columns: 1fr minmax(0, $themeWidth) 1fr;
+	}
+
+	body.page.fullwidth-page-layout .has-post-thumbnail .featured-image-container .page-header-container {
+        grid-template-columns: 1fr 1.5rem minmax(0, $themeWidth) 1.5rem;
+	}
+}
+@media only screen and (min-width: 1120px) {
+    body.page.wide-page-layout .has-post-thumbnail .featured-image-container .page-header-container {
+        grid-template-columns: 1fr 2rem minmax(0, $wideWidth) 2rem;
+	}
+
+	body.page.fullwidth-page-layout .has-post-thumbnail .featured-image-container .page-header-container {
+        grid-template-columns: 1fr 2rem minmax(0, $themeWidth) 2rem;
+	}
+}
+
+/* Disable Wide Blocks on Page Layouts */
+body.wide-page-layout .entry-content > .alignwide,
+body.fullwidth-page-layout .entry-content > .alignwide {
+	margin: 0;
+	max-width: 100%;
+}
