@@ -44,6 +44,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
+	--primary-color: #009966;
+	--secondary-color: #2cbe95;
 	--link-color: #009966;
 	--link-hover-color: #252525;
 	--button-color: #009966;
@@ -64,10 +66,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-text-color: #252525;
 	--footer-hover-text-color: rgba(0, 0, 0, 0.5);
 	--footer-border-color: rgba(0, 0, 0, 0.075);
-	--block-primary-color: #009966;
-	--block-secondary-color: #2cbe95;
-	--block-accent-color: #f4dd49;
-	--block-complementary-color: #cf3b46;
 	--text-font: Quicksand, Arial, Helvetica;
 	--title-font: Raleway, Tahoma, Arial;
 	--title-font-weight: normal;
@@ -1184,18 +1182,6 @@ body.post-image-displayed .has-post-thumbnail .featured-image-container .post-im
 	display: none;
 }
 
-/* Hide post meta if they are deactivated in settings */
-body.date-hidden .type-post .entry-meta .posted-on,
-body.author-hidden .type-post .entry-meta .posted-by,
-body.categories-hidden .type-post .entry-meta .posted-in,
-body.date-hidden.author-hidden.categories-hidden .entry-meta {
-	position: absolute;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	width: 1px;
-	height: 1px;
-}
-
 /* Theme Pagination */
 .pagination {
 	margin: 1.5rem 0;
@@ -1499,22 +1485,12 @@ h2.is-style-gt-heading-large {
 /* Block Text Colors */
 .has-primary-color {
 	color: #009966;
-	color: var(--block-primary-color);
+	color: var(--primary-color);
 }
 
 .has-secondary-color {
 	color: #2cbe95;
-	color: var(--block-secondary-color);
-}
-
-.has-accent-color {
-	color: #f4dd49;
-	color: var(--block-accent-color);
-}
-
-.has-complementary-color {
-	color: #cf3b46;
-	color: var(--block-complementary-color);
+	color: var(--secondary-color);
 }
 
 .has-white-color {
@@ -1536,22 +1512,12 @@ h2.is-style-gt-heading-large {
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #009966;
-	background-color: var(--block-primary-color);
+	background-color: var(--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #2cbe95;
-	background-color: var(--block-secondary-color);
-}
-
-.has-accent-background-color {
-	background-color: #f4dd49;
-	background-color: var(--block-accent-color);
-}
-
-.has-complementary-background-color {
-	background-color: #cf3b46;
-	background-color: var(--block-complementary-color);
+	background-color: var(--secondary-color);
 }
 
 .has-white-background-color {

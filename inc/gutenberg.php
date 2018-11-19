@@ -24,22 +24,12 @@ function gt_spirit_gutenberg_support() {
 		array(
 			'name'  => esc_html_x( 'Primary', 'block color', 'gt-spirit' ),
 			'slug'  => 'primary',
-			'color' => esc_html( $theme_options['block_primary_color'] ),
+			'color' => esc_html( $theme_options['primary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Secondary', 'block color', 'gt-spirit' ),
 			'slug'  => 'secondary',
-			'color' => esc_html( $theme_options['block_secondary_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Accent', 'block color', 'gt-spirit' ),
-			'slug'  => 'accent',
-			'color' => esc_html( $theme_options['block_accent_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Complementary', 'block color', 'gt-spirit' ),
-			'slug'  => 'complementary',
-			'color' => esc_html( $theme_options['block_complementary_color'] ),
+			'color' => esc_html( $theme_options['secondary_color'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'White', 'block color', 'gt-spirit' ),
@@ -62,9 +52,6 @@ function gt_spirit_gutenberg_support() {
 			'color' => '#242424',
 		),
 	) );
-
-	// Disable theme support for custom colors.
-	#add_theme_support( 'disable-custom-colors' );
 
 	// Add theme support for font sizes.
 	add_theme_support( 'editor-font-sizes', array(

@@ -14,8 +14,7 @@ require( get_template_directory() . '/inc/customizer/controls/headline-control.p
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/block-color-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/theme-color-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/color-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/typography-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/footer-settings.php' );
 
@@ -41,7 +40,7 @@ add_action( 'customize_register', 'gt_spirit_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function gt_spirit_customize_preview_js() {
-	wp_enqueue_script( 'gt-spirit-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20180910', true );
+	wp_enqueue_script( 'gt-spirit-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20181105', true );
 }
 add_action( 'customize_preview_init', 'gt_spirit_customize_preview_js' );
 
@@ -50,7 +49,7 @@ add_action( 'customize_preview_init', 'gt_spirit_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function gt_spirit_customizer_controls_js() {
-	wp_enqueue_script( 'gt-spirit-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20180910', true );
+	wp_enqueue_script( 'gt-spirit-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20181105', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'gt_spirit_customizer_controls_js' );
 
@@ -59,6 +58,6 @@ add_action( 'customize_controls_enqueue_scripts', 'gt_spirit_customizer_controls
  * Embed CSS styles Customizer Controls.
  */
 function gt_spirit_customizer_controls_css() {
-	wp_enqueue_style( 'gt-spirit-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20180910' );
+	wp_enqueue_style( 'gt-spirit-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20181105' );
 }
 add_action( 'customize_controls_print_styles', 'gt_spirit_customizer_controls_css' );
