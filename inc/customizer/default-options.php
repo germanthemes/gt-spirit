@@ -51,11 +51,6 @@ function gt_spirit_default_options() {
 	$default_options = array(
 		'site_title'                => true,
 		'site_description'          => true,
-		'meta_date'                 => true,
-		'meta_author'               => true,
-		'meta_category'             => true,
-		'post_image_archives'       => true,
-		'post_image_single'         => true,
 		'link_color'                => '#009966',
 		'link_hover_color'          => '#252525',
 		'header_color'              => '#ffffff',

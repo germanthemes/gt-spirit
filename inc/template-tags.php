@@ -37,11 +37,11 @@ if ( ! function_exists( 'gt_spirit_site_description' ) ) :
 		$description = get_bloginfo( 'description', 'display' ); /* WPCS: xss ok. */
 
 		if ( $description || is_customize_preview() ) :
-		?>
+			?>
 
 			<p class="site-description"><?php echo $description; ?></p>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -55,7 +55,7 @@ if ( ! function_exists( 'gt_spirit_header_image' ) ) :
 
 		// Do not show header image on single posts and static pages.
 		if ( false === is_singular() && has_header_image() ) :
-		?>
+			?>
 
 			<div id="headimg" class="header-image default-header-image">
 
@@ -63,7 +63,7 @@ if ( ! function_exists( 'gt_spirit_header_image' ) ) :
 
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -113,9 +113,9 @@ if ( ! function_exists( 'gt_spirit_post_image_archives' ) ) :
 	 */
 	function gt_spirit_post_image_archives() {
 
-		// Display Post Thumbnail if activated.
-		if ( true === gt_spirit_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
-		?>
+		// Display Post Thumbnail.
+		if ( has_post_thumbnail() ) :
+			?>
 
 			<div class="post-image post-image-archives">
 				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
@@ -123,7 +123,7 @@ if ( ! function_exists( 'gt_spirit_post_image_archives' ) ) :
 				</a>
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -135,15 +135,15 @@ if ( ! function_exists( 'gt_spirit_post_image_single' ) ) :
 	 */
 	function gt_spirit_post_image_single() {
 
-		// Display Post Thumbnail if activated.
-		if ( true === gt_spirit_get_option( 'post_image_single' ) && has_post_thumbnail() ) :
-		?>
+		// Display Post Thumbnail.
+		if ( has_post_thumbnail() ) :
+			?>
 
 			<div class="post-image">
 				<?php the_post_thumbnail( 'gt-spirit-header-image' ); ?>
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -262,10 +262,10 @@ function gt_spirit_footer_text() {
 	$footer_text = gt_spirit_get_option( 'footer_text' );
 
 	if ( '' !== $footer_text || is_customize_preview() ) :
-	?>
+		?>
 
 		<span class="footer-text"><?php echo wp_kses_post( $footer_text ); ?></span>
 
-	<?php
+		<?php
 	endif;
 }
