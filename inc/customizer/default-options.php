@@ -56,9 +56,9 @@ function gt_spirit_default_options() {
 		'header_color'     => '#ffffff',
 		'navi_color'       => '#009966',
 		'footer_color'     => '#ffffff',
-		'text_font'        => 'Quicksand',
-		'title_font'       => 'Raleway',
-		'navi_font'        => 'Quicksand',
+		'text_font'        => 'SystemFontStack',
+		'title_font'       => 'SystemFontStack',
+		'navi_font'        => 'SystemFontStack',
 		'footer_text'      => sprintf( '&copy; %1$s %2$s', date( 'Y' ), get_bloginfo( 'name' ) ),
 	);
 
