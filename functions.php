@@ -58,6 +58,11 @@ function gt_spirit_setup() {
 		'height'      => 640,
 	) ) );
 
+	// Set up the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'gt_spirit_custom_background_args', array(
+		'default-color' => 'ffffff',
+	) ) );
+
 	// Add Theme Support for Selective Refresh in Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 }

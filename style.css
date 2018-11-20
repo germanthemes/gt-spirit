@@ -423,7 +423,7 @@ html {
 }
 
 body {
-	background: #ccc; /* Fallback for when there is no custom background color defined. */
+	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote {
@@ -713,7 +713,6 @@ textarea {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background: #fff;
 	overflow: hidden;
 }
 
