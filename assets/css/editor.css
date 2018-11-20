@@ -22,9 +22,10 @@
 	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
 	--title-color: #252525;
 	--title-hover-color: #009966;
-	--footer-color: #fff;
+	--footer-background-color: #fff;
 	--footer-text-color: #252525;
-	--footer-hover-text-color: rgba(0, 0, 0, 0.5);
+	--footer-link-color: rgba(0, 0, 0, 0.75);
+	--footer-link-hover-color: rgba(0, 0, 0, 0.5);
 	--footer-border-color: rgba(0, 0, 0, 0.075);
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
