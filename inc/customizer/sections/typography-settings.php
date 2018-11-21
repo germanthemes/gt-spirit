@@ -17,7 +17,7 @@ function gt_spirit_customize_register_typography_settings( $wp_customize ) {
 	// Add Section for Theme Fonts.
 	$wp_customize->add_section( 'gt_spirit_section_typography', array(
 		'title'    => esc_html__( 'Typography', 'gt-spirit' ),
-		'priority' => 40,
+		'priority' => 20,
 		'panel'    => 'gt_spirit_options_panel',
 	) );
 
