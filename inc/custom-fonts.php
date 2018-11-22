@@ -40,7 +40,7 @@ class GT_Spirit_Custom_Fonts {
 	 * Add Font Family CSS styles in the head area of the Gutenberg editor.
 	 */
 	static function add_custom_fonts_in_editor() {
-		wp_add_inline_style( 'gt-spirit-block-editor', self::get_custom_fonts_css() );
+		wp_add_inline_style( 'gt-spirit-editor-styles', self::get_custom_fonts_css() );
 	}
 
 	/**

@@ -1,0 +1,253 @@
+/*
+ * Editor Styles
+ *
+ * @package GT Spirit
+ */
+
+/*--------------------------------------------------------------
+# - Variables
+--------------------------------------------------------------*/
+:root {
+	--primary-color: #009966;
+	--secondary-color: #2cbe95;
+	--link-color: #009966;
+	--link-hover-color: #252525;
+	--button-color: #009966;
+	--button-text-color: #fff;
+	--button-hover-color: #252525;
+	--button-hover-text-color: #fff;
+	--header-background-color: #fff;
+	--header-text-color: #252525;
+	--header-hover-text-color: #009966;
+	--header-border-color: rgba(0, 0, 0, 0.075);
+	--header-border-width: 1px;
+	--submenu-color: #009966;
+	--submenu-text-color: #fff;
+	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
+	--title-color: #252525;
+	--title-hover-color: #009966;
+	--footer-background-color: #fff;
+	--footer-text-color: #252525;
+	--footer-link-color: rgba(0, 0, 0, 0.75);
+	--footer-link-hover-color: rgba(0, 0, 0, 0.5);
+	--footer-border-color: rgba(0, 0, 0, 0.075);
+	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--title-font-weight: normal;
+	--title-text-transform: none;
+	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--navi-font-weight: normal;
+	--navi-text-transform: none;
+}
+
+/*--------------------------------------------------------------
+# - Layout
+--------------------------------------------------------------*/
+.editor-styles-wrapper .wp-block {
+	width: calc( 800px + 30px);
+	max-width: 100%;
+}
+
+/* Fullwidth Template */
+.gt-fullwidth-page-layout .editor-styles-wrapper .wp-block {
+	width: calc( 1440px + 30px);
+}
+
+/* Post and Page Title */
+body.block-editor-page .editor-post-title__block .editor-post-title__input {
+	font-size: 32px;
+	font-size: 2rem;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--title-font);
+	font-weight: normal;
+	font-weight: var(--title-font-weight);
+	text-transform: none;
+	text-transform: var(--title-text-transform);
+	line-height: 1.4;
+}
+
+/* Hidden Page Title */
+body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-post-title {
+	background-color: #fff;
+	background-image: linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd), linear-gradient(45deg, #ddd 25%, transparent 25%, transparent 75%, #ddd 75%, #ddd);
+	background-size: 20px 20px;
+	background-position: 0 0, 10px 10px;
+}
+
+/*--------------------------------------------------------------
+# - Elements
+--------------------------------------------------------------*/
+
+/* Typography */
+body.block-editor-page .editor-styles-wrapper {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--text-font);
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.75;
+	color: #252525;
+}
+
+body.block-editor-page .editor-styles-wrapper p {
+	font-size: 18px;
+	font-size: 1.125rem;
+	line-height: 1.75;
+	margin-bottom: 1.5em;
+}
+
+body.block-editor-page .editor-styles-wrapper .mce-content-body {
+	line-height: 1.75;
+}
+
+/* Lists */
+body.block-editor-page .editor-styles-wrapper ul,
+body.block-editor-page .editor-styles-wrapper ol {
+	margin: 0;
+	padding: 0;
+}
+
+body.block-editor-page .editor-styles-wrapper ul {
+	list-style-type: disc;
+}
+
+body.block-editor-page .editor-styles-wrapper ol {
+	list-style-type: decimal;
+}
+
+body.block-editor-page .editor-styles-wrapper ul ul,
+body.block-editor-page .editor-styles-wrapper ol ul {
+	list-style-type: circle;
+}
+
+/* Headings */
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	clear: both;
+	margin: 1em 0 0.75em;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: var(--title-font);
+	line-height: 1.4;
+}
+
+.editor-styles-wrapper h1 {
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+.editor-styles-wrapper h2 {
+	font-size: 26px;
+	font-size: 1.625rem;
+}
+
+.editor-styles-wrapper h3 {
+	font-size: 22px;
+	font-size: 1.375rem;
+}
+
+.editor-styles-wrapper h4 {
+	font-size: 20px;
+	font-size: 1.25rem;
+}
+
+.editor-styles-wrapper h5 {
+	font-size: 19px;
+	font-size: 1.1875rem;
+}
+
+.editor-styles-wrapper h6 {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+/*--------------------------------------------------------------
+# - Blocks
+--------------------------------------------------------------*/
+
+/* Cover Image Block */
+.wp-block-cover-image.alignwide,
+.wp-block-cover-image.alignfull {
+	width: auto;
+}
+
+/*--------------------------------------------------------------
+# - Colors
+--------------------------------------------------------------*/
+
+/* Block Text Colors */
+.has-primary-color {
+	color: #009966;
+	color: var(--primary-color);
+}
+
+.has-secondary-color {
+	color: #2cbe95;
+	color: var(--secondary-color);
+}
+
+.has-white-color {
+	color: #ffffff;
+}
+
+.has-light-gray-color {
+	color: #e5e5e5;
+}
+
+.has-dark-gray-color {
+	color: #555555;
+}
+
+.has-black-color {
+	color: #242424;
+}
+
+/* Block Background Colors */
+.has-primary-background-color {
+	background-color: #009966;
+	background-color: var(--primary-color);
+}
+
+.has-secondary-background-color {
+	background-color: #2cbe95;
+	background-color: var(--secondary-color);
+}
+
+.has-white-background-color {
+	background-color: #ffffff;
+}
+
+.has-light-gray-background-color {
+	background-color: #e5e5e5;
+}
+
+.has-dark-gray-background-color {
+	background-color: #555555;
+}
+
+.has-black-background-color {
+	background-color: #242424;
+}
+
+/*--------------------------------------------------------------
+# - Font Sizes
+--------------------------------------------------------------*/
+
+/* Block Font Sizes */
+.has-small-font-size {
+	font-size: 16px;
+}
+
+.has-medium-font-size {
+	font-size: 20px;
+}
+
+.has-large-font-size {
+	font-size: 24px;
+}
+
+.has-extra-large-font-size {
+	font-size: 36px;
+}

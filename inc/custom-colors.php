@@ -37,7 +37,7 @@ class GT_Spirit_Custom_Colors {
 	 * Add Font Family CSS styles in the head area of the Gutenberg editor.
 	 */
 	static function add_custom_colors_in_editor() {
-		wp_add_inline_style( 'gt-spirit-block-editor', self::get_custom_colors_css() );
+		wp_add_inline_style( 'gt-spirit-editor-styles', self::get_custom_colors_css() );
 	}
 
 	/**
