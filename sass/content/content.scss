@@ -39,8 +39,8 @@ body.page .has-post-thumbnail .featured-image-container .post-image,
 body.post-image-displayed .has-post-thumbnail .featured-image-container .post-image {
 	margin-top: -1px;
 	margin-top: calc( var(--header-border-width) * -1 );
-	margin-left: calc( -100vw / 2 + 100% / 2 );
-	margin-right: calc( -100vw / 2 + 100% / 2 );
+	margin-left: calc( -100vw / 2 + 100% / 2 + 8px );
+	margin-right: calc( -100vw / 2 + 100% / 2 + 8px );
 	max-width: 100vw;
 }
 
@@ -51,8 +51,8 @@ body.post-image-displayed .has-post-thumbnail .featured-image-container .post-im
 
 .entry-content > .alignwide,
 .entry-content > .alignfull {
-	margin-left: calc( -100vw / 2 + 100% / 2 );
-	margin-right: calc( -100vw / 2 + 100% / 2 );
+	margin-left: calc( -100vw / 2 + 100% / 2 + 8px );
+	margin-right: calc( -100vw / 2 + 100% / 2 + 8px );
 	max-width: 100vw;
 }
 

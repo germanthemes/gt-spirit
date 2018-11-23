@@ -1,26 +1,37 @@
 /* Fullwidth Page Layout */
 body.fullwidth-page-layout .site-content .site-main {
-	max-width: $themeWidth;
+	max-width: $contentFullwidth;
 }
 
 /* Adjust Page Titles */
 @media only screen and (min-width: 880px) {
 	body.page.fullwidth-page-layout .has-post-thumbnail .featured-image-container {
-    	grid-template-columns: 1fr minmax(0, $themeWidth) 1fr;
+    	grid-template-columns: 1fr minmax(0, $contentFullwidth) 1fr;
 	}
 
 	body.page.fullwidth-page-layout .has-post-thumbnail .featured-image-container .page-header-container {
-        grid-template-columns: 1fr 1.5rem minmax(0, $themeWidth) 1.5rem;
+        grid-template-columns: 1fr 1.5rem minmax(0, $contentFullwidth) 1.5rem;
 	}
 }
 @media only screen and (min-width: 1120px) {
 	body.page.fullwidth-page-layout .has-post-thumbnail .featured-image-container .page-header-container {
-        grid-template-columns: 1fr 2rem minmax(0, $themeWidth) 2rem;
+        grid-template-columns: 1fr 2rem minmax(0, $contentFullwidth) 2rem;
 	}
 }
 
-/* Disable Wide Blocks on Page Layouts */
-body.fullwidth-page-layout .entry-content > .alignwide {
-	margin: 0;
-	max-width: 100%;
+/* Adjust Wide Blocks */
+@media only screen and (min-width: 1120px) {
+	body.fullwidth-page-layout .entry-content > .alignwide {
+		margin-left: calc( -100vw / 2 + 100% / 2 + 8px );
+		margin-right: calc( -100vw / 2 + 100% / 2 + 8px );
+		max-width: 100vw;
+	}
+}
+
+@media only screen and (min-width: 1360px) {
+	body.fullwidth-page-layout .entry-content > .alignwide {
+		margin-left: -160px;
+		margin-right: -160px;
+		max-width: $wideBlockFullwidth;
+	}
 }
