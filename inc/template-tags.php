@@ -53,8 +53,8 @@ if ( ! function_exists( 'gt_spirit_header_image' ) ) :
 	 */
 	function gt_spirit_header_image() {
 
-		// Do not show header image on single posts and static pages.
-		if ( false === is_singular() && has_header_image() ) :
+		// Do not show header image on single pages.
+		if ( false === is_page() && has_header_image() ) :
 			?>
 
 			<div id="headimg" class="header-image default-header-image">
@@ -107,21 +107,31 @@ if ( ! function_exists( 'gt_spirit_search_header' ) ) :
 endif;
 
 
-if ( ! function_exists( 'gt_spirit_post_image_archives' ) ) :
+if ( ! function_exists( 'gt_spirit_post_image' ) ) :
 	/**
-	 * Displays the featured image on archive posts.
+	 * Displays the featured image on posts.
 	 */
-	function gt_spirit_post_image_archives() {
+	function gt_spirit_post_image() {
+		if ( ! has_post_thumbnail() ) {
+			return;
+		}
 
-		// Display Post Thumbnail.
-		if ( has_post_thumbnail() ) :
+		if ( is_singular() ) :
 			?>
 
-			<div class="post-image post-image-archives">
-				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
+			<figure class="post-image post-image-single">
+				<?php the_post_thumbnail(); ?>
+			</figure>
+
+			<?php
+		else :
+			?>
+
+			<figure class="post-image post-image-archives">
+				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark" aria-hidden="true">
 					<?php the_post_thumbnail(); ?>
 				</a>
-			</div>
+			</figure>
 
 			<?php
 		endif;
@@ -129,22 +139,76 @@ if ( ! function_exists( 'gt_spirit_post_image_archives' ) ) :
 endif;
 
 
-if ( ! function_exists( 'gt_spirit_post_image_single' ) ) :
+if ( ! function_exists( 'gt_spirit_page_header' ) ) :
 	/**
-	 * Displays the featured image on single posts
+	 * Displays page header with featured image on single pages.
 	 */
-	function gt_spirit_post_image_single() {
+	function gt_spirit_page_header() {
 
-		// Display Post Thumbnail.
-		if ( has_post_thumbnail() ) :
+		if ( has_post_thumbnail() || has_header_image() ) :
 			?>
 
-			<div class="post-image">
-				<?php the_post_thumbnail( 'gt-spirit-header-image' ); ?>
+			<div class="featured-image-container">
+
+				<div class="page-image">
+
+					<?php gt_spirit_page_image(); ?>
+
+				</div>
+
+				<div class="page-header-container entry-header-container">
+
+					<?php gt_spirit_page_title(); ?>
+
+				</div>
+
 			</div>
 
 			<?php
+		else :
+
+			gt_spirit_page_title();
+
 		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_page_image' ) ) :
+	/**
+	 * Displays the image on single pages.
+	 */
+	function gt_spirit_page_image() {
+
+		if ( has_post_thumbnail() ) :
+
+			the_post_thumbnail( 'gt-spirit-single-page' );
+
+		else :
+			?>
+
+			<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id, 'full' ) ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+
+			<?php
+		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_page_title' ) ) :
+	/**
+	 * Displays the page title for single pages.
+	 */
+	function gt_spirit_page_title() {
+		?>
+
+		<header class="page-header entry-header">
+
+			<?php the_title( '<h1 class="page-title entry-title">', '</h1>' ); ?>
+
+		</header><!-- .entry-header -->
+
+		<?php
 	}
 endif;
 

@@ -113,6 +113,11 @@ body.gt-page-title-hidden.block-editor-page .edit-post-visual-editor .editor-pos
 	line-height: 1.75;
 }
 
+.editor-styles-wrapper a {
+	color: #009966;
+	color: var(--link-color);
+}
+
 .editor-styles-wrapper hr {
 	margin-bottom: 1.5em;
 	height: 1px;

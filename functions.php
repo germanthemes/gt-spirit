@@ -27,10 +27,10 @@ function gt_spirit_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 720, 360, true );
+	set_post_thumbnail_size( 800, 500, true );
 
-	// Add image size for header image on single posts and pages.
-	add_image_size( 'gt-spirit-header-image', 2560, 640, true );
+	// Add image size for header image on single pages.
+	add_image_size( 'gt-spirit-single-page', 1920, 560, true );
 
 	// Register Navigation Menus.
 	register_nav_menus( array(
@@ -45,7 +45,7 @@ function gt_spirit_setup() {
 
 	// Set up the WordPress core custom logo feature.
 	add_theme_support( 'custom-logo', apply_filters( 'gt_spirit_custom_logo_args', array(
-		'height'      => 60,
+		'height'      => 50,
 		'width'       => 300,
 		'flex-height' => true,
 		'flex-width'  => true,
@@ -54,8 +54,8 @@ function gt_spirit_setup() {
 	// Set up the WordPress core custom header feature.
 	add_theme_support( 'custom-header', apply_filters( 'gt_spirit_custom_header_args', array(
 		'header-text' => false,
-		'width'       => 2560,
-		'height'      => 640,
+		'width'       => 1920,
+		'height'      => 560,
 	) ) );
 
 	// Set up the WordPress core custom background feature.

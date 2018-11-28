@@ -9,23 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="featured-image-container">
-
-		<div class="post-image">
-			<?php the_post_thumbnail( 'gt-spirit-header-image' ); ?>
-		</div>
-
-		<div class="page-header-container entry-header-container">
-
-			<header class="page-header entry-header">
-
-				<?php the_title( '<h1 class="page-title entry-title">', '</h1>' ); ?>
-
-			</header><!-- .entry-header -->
-
-		</div>
-
-	</div>
+	<?php gt_spirit_page_header(); ?>
 
 	<div class="entry-content">
 
