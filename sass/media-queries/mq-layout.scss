@@ -8,6 +8,15 @@
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
 	}
+
+	/* Footer Widgets */
+	.footer-widgets-background {
+		padding-top: 2rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2rem;
+	}
 }
 
 @media only screen and (min-width: 560px) {
@@ -27,10 +36,6 @@
 		flex-direction: column;
 	}
 
-	.footer-widget-column .widget:last-child {
-		flex-grow: 1;
-	}
-
 	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
 	.footer-widget-column:nth-child(2):nth-last-child(2),
@@ -42,7 +47,24 @@
 @media only screen and (min-width: 800px) {
     .entry-header {
         margin: 1.5rem 0;
-    }
+	}
+	
+	/* Footer Widgets */
+	.footer-widgets-background {
+		padding-top: 2.5rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 2.5rem;
+	}
+	
+	.footer-widgets-columns {
+		margin-right: -2.5rem;
+	}
+
+	.footer-widget-column {
+		padding-right: 2.5rem;
+	}
 	
 	/* Three Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(3),
@@ -89,15 +111,9 @@
     .pagination {
     	margin: 1.5rem 0;
     }
-
-    .site-footer .footer-main {
-    	padding-top: 1.25rem;
-    	padding-bottom: 1.25rem;
-    }
 }
 
 @media only screen and (min-width: 1040px) {
-	
 	/* Four Column Footer Widgets */
 	.footer-widget-column:nth-child(1):nth-last-child(4),
 	.footer-widget-column:nth-child(2):nth-last-child(3),
@@ -132,5 +148,22 @@
 		margin-left: -160px;
 		margin-right: -160px;
 		max-width: $wideBlockWidth;
+	}
+
+	/* Footer Widgets */
+	.footer-widgets-background {
+		padding-top: 3rem;
+	}
+
+	.footer-widgets .widget {
+		margin-bottom: 3rem;
+	}
+	
+	.footer-widgets-columns {
+		margin-right: -3rem;
+	}
+
+	.footer-widget-column {
+		padding-right: 3rem;
 	}
 }

@@ -26,11 +26,10 @@
 	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
 	--title-color: #252525;
 	--title-hover-color: #009966;
-	--footer-background-color: #fff;
-	--footer-text-color: #252525;
-	--footer-link-color: rgba(0, 0, 0, 0.75);
-	--footer-link-hover-color: rgba(0, 0, 0, 0.5);
-	--footer-border-color: rgba(0, 0, 0, 0.075);
+	--footer-background-color: #009966;
+	--footer-text-color: #fff;
+	--footer-link-color: rgba(255, 255, 255, 0.6);
+	--footer-link-hover-color: #fff;
 	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	--title-font-weight: normal;
@@ -57,11 +56,11 @@
 
 /* Fullwidth Template */
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block {
-	max-width: calc( 1040px + 30px);
+	max-width: calc( 1120px + 30px);
 }
 
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=wide] {
-	max-width: calc( 1360px + 30px);
+	max-width: calc( 1440px + 30px);
 }
 
 .gt-fullwidth-page-layout .editor-styles-wrapper .wp-block[data-align=full] {

@@ -6,14 +6,23 @@
 	overflow: hidden;
 }
 
-.site-content {
+.site-content,
+.footer-widgets-background,
+.footer-copyright-background {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
 
-.site-main,
-.footer-main {
+.footer-main,
+.site-main {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.footer-main {
+	max-width: $themeWidth;
+}
+
+.site-main {
 	max-width: $contentWidth;
 }
