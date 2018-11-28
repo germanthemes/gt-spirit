@@ -49,31 +49,116 @@ endif;
 
 if ( ! function_exists( 'gt_spirit_header_image' ) ) :
 	/**
-	 * Displays the custom header image below the navigation menu
+	 * Displays the header image.
 	 */
 	function gt_spirit_header_image() {
+		?>
 
-		// Do not show header image on single posts and pages.
-		if ( false === is_singular() && has_header_image() ) :
+		<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id, 'full' ) ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+
+		<?php
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_blog_header' ) ) :
+	/**
+	 * Displays blog header with header image as background.
+	 */
+	function gt_spirit_blog_header() {
+		// Return early if posts are displayed on front page.
+		if ( 'page' !== get_option( 'show_on_front' ) || get_option( 'page_for_posts' ) < 1 ) {
+			return;
+		}
+
+		if ( has_header_image() ) :
 			?>
 
-			<div id="headimg" class="header-image default-header-image">
+			<div class="featured-image-container">
 
-				<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id, 'full' ) ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+				<div class="page-image">
+
+					<?php gt_spirit_header_image(); ?>
+
+				</div>
+
+				<div class="blog-header-container entry-header-container">
+
+					<?php gt_spirit_blog_title(); ?>
+
+				</div>
 
 			</div>
 
 			<?php
+		else :
+
+			gt_spirit_blog_title();
+
 		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_blog_title' ) ) :
+	/**
+	 * Displays the blog title.
+	 */
+	function gt_spirit_blog_title() {
+		?>
+
+		<header class="blog-header entry-header">
+
+			<h1 class="blog-title entry-title">
+				<?php echo esc_html( get_the_title( get_option( 'page_for_posts' ) ) ); ?>
+			</h1>
+
+		</header><!-- .blog-header -->
+
+		<?php
 	}
 endif;
 
 
 if ( ! function_exists( 'gt_spirit_archive_header' ) ) :
 	/**
-	 * Displays the header title on archive pages.
+	 * Displays archive header with header image as background.
 	 */
 	function gt_spirit_archive_header() {
+		if ( has_header_image() ) :
+			?>
+
+			<div class="featured-image-container">
+
+				<div class="page-image">
+
+					<?php gt_spirit_header_image(); ?>
+
+				</div>
+
+				<div class="archive-header-container entry-header-container">
+
+					<?php gt_spirit_archive_title(); ?>
+
+				</div>
+
+			</div>
+
+			<?php
+		else :
+
+			gt_spirit_archive_title();
+
+		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_archive_title' ) ) :
+	/**
+	 * Displays the archive title.
+	 */
+	function gt_spirit_archive_title() {
 		?>
 
 		<header class="archive-header entry-header">
@@ -90,17 +175,113 @@ endif;
 
 if ( ! function_exists( 'gt_spirit_search_header' ) ) :
 	/**
-	 * Displays the header title on search results.
+	 * Displays search header with header image.
 	 */
 	function gt_spirit_search_header() {
+		if ( has_header_image() ) :
+			?>
+
+			<div class="featured-image-container">
+
+				<div class="page-image">
+
+					<?php gt_spirit_header_image(); ?>
+
+				</div>
+
+				<div class="search-header-container entry-header-container">
+
+					<?php gt_spirit_search_title(); ?>
+
+				</div>
+
+			</div>
+
+			<?php
+		else :
+
+			gt_spirit_search_title();
+
+		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_search_title' ) ) :
+	/**
+	 * Displays the title for search results.
+	 */
+	function gt_spirit_search_title() {
 		?>
 
 		<header class="search-header entry-header">
 
 			<h1 class="search-title entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'gt-spirit' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			<?php get_search_form(); ?>
 
 		</header><!-- .search-header -->
+
+		<?php
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_page_header' ) ) :
+	/**
+	 * Displays page header with featured image on single pages.
+	 */
+	function gt_spirit_page_header() {
+
+		if ( has_post_thumbnail() || has_header_image() ) :
+			?>
+
+			<div class="featured-image-container">
+
+				<div class="page-image">
+
+					<?php
+					if ( has_post_thumbnail() ) :
+
+						the_post_thumbnail( 'gt-spirit-single-page' );
+
+					else :
+
+						gt_spirit_header_image();
+
+					endif;
+					?>
+
+				</div>
+
+				<div class="page-header-container entry-header-container">
+
+					<?php gt_spirit_page_title(); ?>
+
+				</div>
+
+			</div>
+
+			<?php
+		else :
+
+			gt_spirit_page_title();
+
+		endif;
+	}
+endif;
+
+
+if ( ! function_exists( 'gt_spirit_page_title' ) ) :
+	/**
+	 * Displays the page title for single pages.
+	 */
+	function gt_spirit_page_title() {
+		?>
+
+		<header class="page-header entry-header">
+
+			<?php the_title( '<h1 class="page-title entry-title">', '</h1>' ); ?>
+
+		</header><!-- .entry-header -->
 
 		<?php
 	}
@@ -135,80 +316,6 @@ if ( ! function_exists( 'gt_spirit_post_image' ) ) :
 
 			<?php
 		endif;
-	}
-endif;
-
-
-if ( ! function_exists( 'gt_spirit_page_header' ) ) :
-	/**
-	 * Displays page header with featured image on single pages.
-	 */
-	function gt_spirit_page_header() {
-
-		if ( has_post_thumbnail() || has_header_image() ) :
-			?>
-
-			<div class="featured-image-container">
-
-				<div class="page-image">
-
-					<?php gt_spirit_page_image(); ?>
-
-				</div>
-
-				<div class="page-header-container entry-header-container">
-
-					<?php gt_spirit_page_title(); ?>
-
-				</div>
-
-			</div>
-
-			<?php
-		else :
-
-			gt_spirit_page_title();
-
-		endif;
-	}
-endif;
-
-
-if ( ! function_exists( 'gt_spirit_page_image' ) ) :
-	/**
-	 * Displays the image on single pages.
-	 */
-	function gt_spirit_page_image() {
-
-		if ( has_post_thumbnail() ) :
-
-			the_post_thumbnail( 'gt-spirit-single-page' );
-
-		else :
-			?>
-
-			<img src="<?php header_image(); ?>" srcset="<?php echo esc_attr( wp_get_attachment_image_srcset( get_custom_header()->attachment_id, 'full' ) ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-
-			<?php
-		endif;
-	}
-endif;
-
-
-if ( ! function_exists( 'gt_spirit_page_title' ) ) :
-	/**
-	 * Displays the page title for single pages.
-	 */
-	function gt_spirit_page_title() {
-		?>
-
-		<header class="page-header entry-header">
-
-			<?php the_title( '<h1 class="page-title entry-title">', '</h1>' ); ?>
-
-		</header><!-- .entry-header -->
-
-		<?php
 	}
 endif;
 

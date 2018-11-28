@@ -27,7 +27,7 @@ function gt_spirit_setup() {
 	add_theme_support( 'post-thumbnails' );
 
 	// Set default Post Thumbnail size.
-	set_post_thumbnail_size( 800, 500, true );
+	set_post_thumbnail_size( 960, 380, true );
 
 	// Add image size for header image on single pages.
 	add_image_size( 'gt-spirit-single-page', 1920, 560, true );

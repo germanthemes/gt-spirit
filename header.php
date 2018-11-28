@@ -40,8 +40,6 @@
 
 		<?php do_action( 'gt_spirit_after_header' ); ?>
 
-		<?php gt_spirit_header_image(); ?>
-
 		<div id="content" class="site-content">
 
 			<main id="main" class="site-main" role="main">

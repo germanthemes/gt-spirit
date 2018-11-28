@@ -9,6 +9,21 @@
 		padding-right: 1.25rem;
 	}
 
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 1.25rem;
+	}
+
+	.blog .type-post,
+	.archive .type-post {
+		padding-bottom: 1.25rem;
+	}
+
+	.entry-header {
+        margin: 1.25rem 0;
+	}
+
 	/* Footer Widgets */
 	.footer-widgets-background {
 		padding-top: 2rem;
@@ -45,8 +60,23 @@
 }
 
 @media only screen and (min-width: 800px) {
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 1.5rem;
+	}
+
+	.blog .type-post,
+	.archive .type-post {
+		padding-bottom: 1.5rem;
+	}
+
     .entry-header {
         margin: 1.5rem 0;
+	}
+	
+	.entry-content .post-image {
+		margin-bottom: 1.5rem;
 	}
 	
 	/* Footer Widgets */
@@ -76,7 +106,7 @@
 
 @media only screen and (min-width: 880px) {
     /* Page Header with Featured Image */
-	.type-page .featured-image-container {
+	.featured-image-container {
     	margin-left: calc( -100vw / 2 + 100% / 2 );
     	margin-right: calc( -100vw / 2 + 100% / 2 );
         margin-bottom: 1.5rem;
@@ -87,12 +117,12 @@
     	align-items: end;
     }
 
-	.type-page .featured-image-container .page-image {
+	.featured-image-container .page-image {
     	grid-column: 1 / -1;
     	grid-row: 1;
     }
 
-    .type-page .featured-image-container .entry-header-container {
+    .featured-image-container .entry-header-container {
     	grid-column: 1 / -2;
     	grid-row: 1;
     	display: grid;
@@ -103,7 +133,7 @@
         margin-bottom: 1.5rem;
     }
 
-    .type-page .featured-image-container .entry-header-container .entry-header {
+    .featured-image-container .entry-header-container .entry-header {
     	grid-column: 3 / -2;
     	margin: 1.5rem 0;
     }
@@ -111,6 +141,13 @@
     .pagination {
     	margin: 1.5rem 0;
     }
+}
+
+@media only screen and (min-width: 960px) {
+	.entry-content .post-image {
+		margin-left: -160px;
+		max-width: 960px;
+	}
 }
 
 @media only screen and (min-width: 1040px) {
@@ -124,19 +161,34 @@
 }
 
 @media only screen and (min-width: 1120px) {
-    .entry-header {
+	.type-post,
+	.type-page,
+	.type-attachment {
+		margin-bottom: 2rem;
+	}
+
+	.blog .type-post,
+	.archive .type-post {
+		padding-bottom: 2rem;
+	}
+
+	.entry-header {
         margin: 2rem 0;
-    }
+	}
+	
+	.entry-content .post-image {
+		margin-bottom: 2rem;
+	}	
 
-    .type-page .featured-image-container {
+    .featured-image-container {
         margin-bottom: 2rem;
     }
 
-    .type-page .featured-image-container .entry-header-container {
+    .featured-image-container .entry-header-container {
         margin-bottom: 2rem;
     }
 
-    .type-page .featured-image-container .entry-header-container .entry-header {
+    .featured-image-container .entry-header-container .entry-header {
         margin: 2rem 0;
     }
 

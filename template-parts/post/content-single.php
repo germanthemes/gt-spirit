@@ -11,8 +11,6 @@
 
 	<header class="post-header entry-header">
 
-		<?php gt_spirit_post_image(); ?>
-
 		<?php the_title( '<h1 class="post-title entry-title">', '</h1>' ); ?>
 
 		<?php gt_spirit_entry_meta(); ?>
@@ -20,6 +18,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
+		<?php gt_spirit_post_image(); ?>
 
 		<?php the_content(); ?>
 

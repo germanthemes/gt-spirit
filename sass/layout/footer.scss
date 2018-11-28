@@ -37,16 +37,6 @@
 .footer-widgets input[type="submit"],
 .footer-widgets textarea {
 	border: none;
-	@include background(--footer-link-color);
-}
-
-.footer-widgets input[type="text"]:focus,
-.footer-widgets input[type="email"]:focus,
-.footer-widgets input[type="url"]:focus,
-.footer-widgets input[type="password"]:focus,
-.footer-widgets input[type="search"]:focus,
-.footer-widgets textarea:focus {
-	@include background(--footer-link-hover-color);
 }
 
 /* Footer Copyright */

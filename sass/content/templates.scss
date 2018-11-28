@@ -5,11 +5,11 @@ body.fullwidth-page-layout .site-content .site-main {
 
 /* Adjust Page Titles */
 @media only screen and (min-width: 880px) {
-	body.fullwidth-page-layout .type-page .featured-image-container {
+	body.fullwidth-page-layout .featured-image-container {
     	grid-template-columns: 1fr minmax( 0, calc( #{$contentFullwidth} - 3rem ) ) 1fr;
 	}
 
-	body.fullwidth-page-layout .type-page .featured-image-container .entry-header-container {
+	body.fullwidth-page-layout .featured-image-container .entry-header-container {
         grid-template-columns: 1fr 1.5rem minmax( 0, calc( #{$contentFullwidth} - 1.5rem ) ) 1.5rem;
 	}
 }
