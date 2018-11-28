@@ -55,7 +55,7 @@ function gt_spirit_default_options() {
 		'secondary_color'  => '#2cbe95',
 		'header_color'     => '#ffffff',
 		'navi_color'       => '#009966',
-		'footer_color'     => '#ffffff',
+		'footer_color'     => '#009966',
 		'text_font'        => 'SystemFontStack',
 		'title_font'       => 'SystemFontStack',
 		'navi_font'        => 'SystemFontStack',

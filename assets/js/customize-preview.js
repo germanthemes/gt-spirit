@@ -115,22 +115,20 @@
 	/* Footer Color Option */
 	wp.customize( 'gt_spirit_theme_options[footer_color]', function( value ) {
 		value.bind( function( newval ) {
-			var text_color, text_hover_color, border_color;
+			var text_color, link_color;
 
 			if( isColorLight( newval ) ) {
 				text_color = '#252525';
-				text_hover_color = 'rgba(0, 0, 0, 0.5)';
-				border_color = 'rgba(0, 0, 0, 0.05)';
+				link_color = 'rgba(0, 0, 0, 0.6)';
 			} else {
 				text_color = '#ffffff';
-				text_hover_color = 'rgba(255, 255, 255, 0.5)';
-				border_color = 'rgba(255, 255, 255, 0.035)';
+				link_color = 'rgba(255, 255, 255, 0.6)';
 			}
 
-			document.documentElement.style.setProperty( '--footer-color', newval );
+			document.documentElement.style.setProperty( '--footer-background-color', newval );
 			document.documentElement.style.setProperty( '--footer-text-color', text_color );
-			document.documentElement.style.setProperty( '--footer-hover-text-color', text_hover_color );
-			document.documentElement.style.setProperty( '--footer-border-color', border_color );
+			document.documentElement.style.setProperty( '--footer-link-color', link_color );
+			document.documentElement.style.setProperty( '--footer-link-hover-color', text_color );
 		} );
 	} );
 

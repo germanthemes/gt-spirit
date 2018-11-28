@@ -95,7 +95,7 @@ function gt_spirit_customize_register_theme_color_settings( $wp_customize ) {
 	) );
 	$wp_customize->add_control( new WP_Customize_Color_Control(
 		$wp_customize, 'gt_spirit_theme_options[footer_color]', array(
-			'label'    => esc_html_x( 'Footer', 'theme colors', 'gt-spirit' ),
+			'label'    => esc_html_x( 'Footer Widgets', 'theme colors', 'gt-spirit' ),
 			'section'  => 'gt_spirit_section_colors',
 			'settings' => 'gt_spirit_theme_options[footer_color]',
 			'priority' => 50,
