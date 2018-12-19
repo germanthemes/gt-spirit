@@ -50,7 +50,12 @@
 	clear: both;
 	margin: 1em 0 0.75em;
 	@include font-family(--title-font);
+	font-weight: normal;
 	line-height: 1.4;
+
+	&.mce-content-body {
+		line-height: 1.4;
+	}
 }
 
 .editor-styles-wrapper h1 {
