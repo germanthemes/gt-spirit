@@ -53,6 +53,7 @@ function gt_spirit_default_options() {
 		'site_description' => true,
 		'primary_color'    => '#009966',
 		'secondary_color'  => '#2cbe95',
+		'accent_color'     => '#990033',
 		'header_color'     => '#ffffff',
 		'navi_color'       => '#009966',
 		'footer_color'     => '#009966',

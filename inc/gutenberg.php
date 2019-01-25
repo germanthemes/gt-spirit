@@ -32,6 +32,11 @@ function gt_spirit_gutenberg_support() {
 			'color' => esc_html( $theme_options['secondary_color'] ),
 		),
 		array(
+			'name'  => esc_html_x( 'Accent', 'block color', 'gt-spirit' ),
+			'slug'  => 'accent',
+			'color' => esc_html( $theme_options['accent_color'] ),
+		),
+		array(
 			'name'  => esc_html_x( 'White', 'block color', 'gt-spirit' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',
