@@ -49,19 +49,23 @@ function gt_spirit_theme_options() {
 function gt_spirit_default_options() {
 
 	$default_options = array(
-		'site_title'       => true,
-		'site_description' => true,
-		'primary_color'    => '#009966',
-		'secondary_color'  => '#2cbe95',
-		'accent_color'     => '#990033',
-		'header_color'     => '#ffffff',
-		'navi_color'       => '#009966',
-		'footer_color'     => '#009966',
-		'text_font'        => 'SystemFontStack',
-		'title_font'       => 'SystemFontStack',
-		'navi_font'        => 'SystemFontStack',
-		'license_key'      => '',
-		'license_status'   => 'inactive',
+		'site_title'         => true,
+		'site_description'   => true,
+		'primary_color'      => '#009966',
+		'secondary_color'    => '#2cbe95',
+		'accent_color'       => '#990033',
+		'header_color'       => '#ffffff',
+		'navi_color'         => '#009966',
+		'footer_color'       => '#009966',
+		'text_font'          => 'SystemFontStack',
+		'title_font'         => 'SystemFontStack',
+		'title_is_bold'      => false,
+		'title_is_uppercase' => false,
+		'navi_font'          => 'SystemFontStack',
+		'navi_is_bold'       => false,
+		'navi_is_uppercase'  => false,
+		'license_key'        => '',
+		'license_status'     => 'inactive',
 	);
 
 	return apply_filters( 'gt_spirit_default_options', $default_options );

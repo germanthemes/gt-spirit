@@ -139,7 +139,7 @@
 		} );
 	} );
 
-	/* Theme Fonts */
+	/* Text Font */
 	wp.customize( 'gt_spirit_theme_options[text_font]', function( value ) {
 		value.bind( function( newval ) {
 
@@ -163,6 +163,7 @@
 		} );
 	} );
 
+	/* Title Font */
 	wp.customize( 'gt_spirit_theme_options[title_font]', function( value ) {
 		value.bind( function( newval ) {
 
@@ -186,6 +187,23 @@
 		} );
 	} );
 
+	/* Title Font Weight */
+	wp.customize( 'gt_spirit_theme_options[title_is_bold]', function( value ) {
+		value.bind( function( newval ) {
+			var fontWeight = newval ? 'bold' : 'normal';
+			document.documentElement.style.setProperty( '--title-font-weight', fontWeight );
+		} );
+	} );
+
+	/* Title Text Transform */
+	wp.customize( 'gt_spirit_theme_options[title_is_uppercase]', function( value ) {
+		value.bind( function( newval ) {
+			var textTransform = newval ? 'uppercase' : 'none';
+			document.documentElement.style.setProperty( '--title-text-transform', textTransform );
+		} );
+	} );
+
+	/* Navi Font */
 	wp.customize( 'gt_spirit_theme_options[navi_font]', function( value ) {
 		value.bind( function( newval ) {
 
@@ -206,6 +224,22 @@
 
 			// Set CSS.
 			document.documentElement.style.setProperty( '--navi-font', newFont );
+		} );
+	} );
+
+	/* Navi Font Weight */
+	wp.customize( 'gt_spirit_theme_options[navi_is_bold]', function( value ) {
+		value.bind( function( newval ) {
+			var fontWeight = newval ? 'bold' : 'normal';
+			document.documentElement.style.setProperty( '--navi-font-weight', fontWeight );
+		} );
+	} );
+
+	/* Navi Text Transform */
+	wp.customize( 'gt_spirit_theme_options[navi_is_uppercase]', function( value ) {
+		value.bind( function( newval ) {
+			var textTransform = newval ? 'uppercase' : 'none';
+			document.documentElement.style.setProperty( '--navi-text-transform', textTransform );
 		} );
 	} );
 
