@@ -2134,3 +2134,9 @@ body.fullwidth-page-layout .site-content .site-main {
 .page-title-hidden .type-page .featured-image-container .page-header-container {
 	display: none;
 }
+
+/* Remove Bottom Margin */
+.page-bottom-margin-removed .type-page,
+.page-bottom-margin-removed .type-page .entry-content > *:last-child {
+	margin-bottom: 0;
+}
