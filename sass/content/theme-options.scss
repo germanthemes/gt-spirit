@@ -30,3 +30,9 @@ body.fullwidth-page-layout .site-content .site-main {
 		max-width: $wideBlockFullwidth;
 	}
 }
+
+/* Hide Page Title */
+.page-title-hidden .type-page > .page-header,
+.page-title-hidden .type-page .featured-image-container .page-header-container {
+	display: none;
+}
