@@ -59,14 +59,6 @@ class GT_Spirit_Custom_Colors {
 		// Set Primary Color.
 		if ( $theme_options['primary_color'] !== $default['primary_color'] ) {
 			$color_variables .= '--primary-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--link-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--button-color: ' . $theme_options['primary_color'] . ';';
-			$color_variables .= '--title-hover-color: ' . $theme_options['primary_color'] . ';';
-
-			// Check if a light background color was chosen.
-			if ( self::is_color_light( $theme_options['primary_color'] ) ) {
-				$color_variables .= '--button-text-color: #252525;';
-			}
 		}
 
 		// Set Secondary Color.
@@ -99,6 +91,31 @@ class GT_Spirit_Custom_Colors {
 			$color_variables .= '--dark-gray-color: ' . $theme_options['dark_gray_color'] . ';';
 		}
 
+		// Set Link Color.
+		if ( $theme_options['link_color'] !== $default['link_color'] ) {
+			$color_variables .= '--link-color: ' . $theme_options['link_color'] . ';';
+		}
+
+		// Set Button Color.
+		if ( $theme_options['button_color'] !== $default['button_color'] ) {
+			$color_variables .= '--button-color: ' . $theme_options['button_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_color'] ) ) {
+				$color_variables .= '--button-text-color: #151515;';
+			}
+		}
+
+		// Set Button Hover Color.
+		if ( $theme_options['button_hover_color'] !== $default['button_hover_color'] ) {
+			$color_variables .= '--button-hover-color: ' . $theme_options['button_hover_color'] . ';';
+
+			// Check if a light background color was chosen.
+			if ( self::is_color_light( $theme_options['button_hover_color'] ) ) {
+				$color_variables .= '--button-hover-text-color: #151515;';
+			}
+		}
+
 		// Set Header Color.
 		if ( $theme_options['header_color'] !== $default['header_color'] ) {
 			$color_variables .= '--header-background-color: ' . $theme_options['header_color'] . ';';
@@ -121,6 +138,16 @@ class GT_Spirit_Custom_Colors {
 				$color_variables .= '--submenu-text-color: #252525;';
 				$color_variables .= '--submenu-hover-text-color: rgba(0, 0, 0, 0.5);';
 			}
+		}
+
+		// Set Title Color.
+		if ( $theme_options['title_color'] !== $default['title_color'] ) {
+			$color_variables .= '--title-color: ' . $theme_options['title_color'] . ';';
+		}
+
+		// Set Title Hover Color.
+		if ( $theme_options['title_hover_color'] !== $default['title_hover_color'] ) {
+			$color_variables .= '--title-hover-color: ' . $theme_options['title_hover_color'] . ';';
 		}
 
 		// Set Footer Color.
