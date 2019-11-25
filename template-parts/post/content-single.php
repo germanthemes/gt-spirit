@@ -22,6 +22,7 @@
 		<?php gt_spirit_post_image(); ?>
 
 		<?php the_content(); ?>
+		<?php wp_link_pages(); ?>
 
 	</div><!-- .entry-content -->
 
