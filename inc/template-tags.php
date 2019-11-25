@@ -409,6 +409,23 @@ if ( ! function_exists( 'gt_spirit_entry_categories' ) ) :
 endif;
 
 
+if ( ! function_exists( 'gt_spirit_entry_tags' ) ) :
+	/**
+	 * Displays the post tags on single post view
+	 */
+	function gt_spirit_entry_tags() {
+		// Get tags.
+		$tag_list = get_the_tag_list( esc_html__( 'Tags: ', 'gt-spirit' ), ', ' );
+
+		// Display tags.
+		if ( $tag_list ) :
+			echo '<p class="entry-tags">' . $tag_list . '</p>';
+		endif;
+	}
+endif;
+
+
+
 if ( ! function_exists( 'gt_spirit_pagination' ) ) :
 	/**
 	 * Displays pagination on archive pages
