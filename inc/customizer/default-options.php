@@ -51,6 +51,10 @@ function gt_spirit_default_options() {
 	$default_options = array(
 		'site_title'         => true,
 		'site_description'   => true,
+		'meta_date'          => true,
+		'meta_author'        => true,
+		'meta_categories'    => true,
+		'meta_tags'          => false,
 		'primary_color'      => '#009966',
 		'secondary_color'    => '#2cbe95',
 		'accent_color'       => '#990033',
