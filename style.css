@@ -1716,6 +1716,35 @@ object {
 	width: auto;
 }
 
+/* Group Block */
+.wp-block-group.has-background {
+	padding: 1.25rem;
+}
+
+.wp-block-group.alignwide,
+.wp-block-group.alignfull {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+.wp-block-group.has-background a:link,
+.wp-block-group.has-background a:visited {
+	color: inherit;
+}
+
+.wp-block-group.has-background a:hover,
+.wp-block-group.has-background a:active {
+	text-decoration: none;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:first-child {
+	margin-top: 0;
+}
+
+.wp-block-group.has-background > .wp-block-group__inner-container > *:last-child {
+	margin-bottom: 0;
+}
+
 /* GT Section Block */
 .gt-background-section .gt-section-content.gt-default-width {
 	max-width: 800px;
@@ -2222,6 +2251,45 @@ object {
 	.main-navigation ul ul .page_item_has_children > a:hover > .icon {
 		fill: rgba(255, 255, 255, 0.5);
 		fill: var(--submenu-hover-text-color);
+	}
+}
+
+/*--------------------------------------------------------------
+## - Media Queries for Blocks
+--------------------------------------------------------------*/
+@media only screen and (min-width: 480px) {
+	.wp-block-group.has-background {
+		padding: 1.5rem;
+	}
+
+	.wp-block-group.alignwide,
+	.wp-block-group.alignfull {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 1.75rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 1.75rem;
+		padding-right: 1.75rem;
+	}
+}
+
+@media only screen and (min-width: 1120px) {
+	.entry-content > .wp-block-group.has-background {
+		padding: 2rem;
+	}
+
+	.entry-content > .wp-block-group.alignwide,
+	.entry-content > .wp-block-group.alignfull {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 }
 
