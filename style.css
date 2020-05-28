@@ -1685,37 +1685,6 @@ object {
 	fill: currentColor;
 }
 
-/* Image Block */
-.wp-block-image {
-	margin-bottom: 1.5em;
-}
-
-.wp-block-image img {
-	vertical-align: top;
-}
-
-/* Media Text Block */
-.wp-block-media-text {
-	margin-bottom: 1.5em;
-}
-
-/* Cover Block */
-.wp-block-cover {
-	display: flex;
-}
-
-.wp-block-cover-text {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 32px;
-	font-size: 2rem;
-}
-
-.wp-block-cover.alignwide,
-.wp-block-cover.alignfull {
-	width: auto;
-}
-
 /* Group Block */
 .wp-block-group.has-background {
 	padding: 1.25rem;
@@ -1756,6 +1725,37 @@ object {
 
 .gt-background-section .gt-section-content.gt-full-width {
 	max-width: 1440px;
+}
+
+/* Image Block */
+.wp-block-image {
+	margin-bottom: 1.5em;
+}
+
+.wp-block-image img {
+	vertical-align: top;
+}
+
+/* Media Text Block */
+.wp-block-media-text {
+	margin-bottom: 1.5em;
+}
+
+/* Cover Block */
+.wp-block-cover {
+	display: flex;
+}
+
+.wp-block-cover-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 32px;
+	font-size: 2rem;
+}
+
+.wp-block-cover.alignwide,
+.wp-block-cover.alignfull {
+	width: auto;
 }
 
 /* Block Text Colors */
