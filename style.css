@@ -8,7 +8,7 @@ Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: gt-spirit
-Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column
+Tags: custom-background, custom-logo, custom-header, custom-menu, grid-layout, editor-style, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, translation-ready, theme-options, one-column, wide-blocks, block-styles, block-patterns
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool and share what you've learned with others.
@@ -71,11 +71,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-text-color: #fff;
 	--footer-link-color: rgba(255, 255, 255, 0.6);
 	--footer-link-hover-color: #fff;
-	--text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--title-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--text-font: "Quicksand", arial, helvetica, sans-serif;
+	--title-font: "Quicksand", arial, helvetica, sans-serif;
 	--title-font-weight: normal;
 	--title-text-transform: none;
-	--navi-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--navi-font: "Quicksand", arial, helvetica, sans-serif;
 	--navi-font-weight: normal;
 	--navi-text-transform: none;
 }
@@ -310,7 +310,7 @@ textarea {
 	color: #252525;
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
 }
@@ -323,7 +323,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: normal;
 	font-weight: var(--title-font-weight);
@@ -827,7 +827,7 @@ textarea {
 	text-decoration: none;
 	font-size: 22px;
 	font-size: 1.375rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: normal;
 	font-weight: var(--title-font-weight);
@@ -887,7 +887,7 @@ textarea {
 	list-style: none;
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
 	font-weight: var(--navi-font-weight);
@@ -985,7 +985,7 @@ textarea {
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--navi-font);
 	font-weight: normal;
 	font-weight: var(--navi-font-weight);
@@ -1126,7 +1126,7 @@ textarea {
 	word-wrap: break-word;
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--title-font);
 	font-weight: normal;
 	font-weight: var(--title-font-weight);
@@ -1526,7 +1526,7 @@ object {
 
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 }
 
@@ -1555,7 +1555,7 @@ object {
 
 .wp-block-pullquote blockquote cite {
 	color: #252525;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Quicksand", arial, helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-style: normal;
 }
