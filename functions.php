@@ -6,6 +6,15 @@
  */
 
 /**
+ * GT Spirit only works in WordPress 5.3 or later.
+ */
+if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
+	require get_template_directory() . '/inc/admin/back-compat.php';
+	return;
+}
+
+
+/**
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
@@ -211,7 +220,7 @@ function gt_spirit_theme_updater() {
 		$theme_updater = new GT_Spirit_Theme_Updater(
 			array(
 				'remote_api_url' => GT_SPIRIT_STORE_API_URL,
-				'version'        => '1.5',
+				'version'        => '1.5.1',
 				'license'        => trim( gt_spirit_get_option( 'license_key' ) ),
 				'item_id'        => GT_SPIRIT_PRODUCT_ID,
 				'item_name'      => 'GT Spirit',
