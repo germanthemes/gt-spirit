@@ -47,40 +47,40 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - CSS Variables
 --------------------------------------------------------------*/
 :root {
-	--primary-color: #009966;
-	--secondary-color: #2cbe95;
-	--accent-color: #990033;
-	--highlight-color: #0077aa;
-	--light-gray-color: #e5e5e5;
-	--gray-color: #858585;
-	--dark-gray-color: #252525;
-	--link-color: #009966;
-	--link-hover-color: #252525;
-	--button-color: #009966;
-	--button-text-color: #fff;
-	--button-hover-color: #252525;
-	--button-hover-text-color: #fff;
-	--header-background-color: #fff;
-	--header-text-color: #252525;
-	--header-hover-text-color: #009966;
-	--header-border-color: rgba(0, 0, 0, 0.075);
-	--header-border-width: 1px;
-	--submenu-color: #009966;
-	--submenu-text-color: #fff;
-	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
-	--title-color: #252525;
-	--title-hover-color: #009966;
-	--footer-background-color: #009966;
-	--footer-text-color: #fff;
-	--footer-link-color: rgba(255, 255, 255, 0.6);
-	--footer-link-hover-color: #fff;
-	--text-font: "Quicksand", arial, helvetica, sans-serif;
-	--title-font: "Quicksand", arial, helvetica, sans-serif;
-	--title-font-weight: normal;
-	--title-text-transform: none;
-	--navi-font: "Quicksand", arial, helvetica, sans-serif;
-	--navi-font-weight: normal;
-	--navi-text-transform: none;
+	--gt-spirit--primary-color: #009966;
+	--gt-spirit--secondary-color: #2cbe95;
+	--gt-spirit--accent-color: #990033;
+	--gt-spirit--highlight-color: #0077aa;
+	--gt-spirit--light-gray-color: #e5e5e5;
+	--gt-spirit--gray-color: #858585;
+	--gt-spirit--dark-gray-color: #252525;
+	--gt-spirit--link-color: #009966;
+	--gt-spirit--link-hover-color: #252525;
+	--gt-spirit--button-color: #009966;
+	--gt-spirit--button-text-color: #fff;
+	--gt-spirit--button-hover-color: #252525;
+	--gt-spirit--button-hover-text-color: #fff;
+	--gt-spirit--header-background-color: #fff;
+	--gt-spirit--header-text-color: #252525;
+	--gt-spirit--header-hover-text-color: #009966;
+	--gt-spirit--header-border-color: rgba(0, 0, 0, 0.075);
+	--gt-spirit--header-border-width: 1px;
+	--gt-spirit--submenu-color: #009966;
+	--gt-spirit--submenu-text-color: #fff;
+	--gt-spirit--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
+	--gt-spirit--title-color: #252525;
+	--gt-spirit--title-hover-color: #009966;
+	--gt-spirit--footer-background-color: #009966;
+	--gt-spirit--footer-text-color: #fff;
+	--gt-spirit--footer-link-color: rgba(255, 255, 255, 0.6);
+	--gt-spirit--footer-link-hover-color: #fff;
+	--gt-spirit--text-font: "Quicksand", arial, helvetica, sans-serif;
+	--gt-spirit--title-font: "Quicksand", arial, helvetica, sans-serif;
+	--gt-spirit--title-font-weight: normal;
+	--gt-spirit--title-text-transform: none;
+	--gt-spirit--navi-font: "Quicksand", arial, helvetica, sans-serif;
+	--gt-spirit--navi-font-weight: normal;
+	--gt-spirit--navi-text-transform: none;
 }
 
 /*--------------------------------------------------------------
@@ -314,7 +314,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-spirit--text-font);
 	line-height: 1.75;
 }
 
@@ -327,11 +327,11 @@ h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-spirit--title-font);
 	font-weight: normal;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-spirit--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-spirit--title-text-transform);
 	line-height: 1.4;
 }
 
@@ -520,7 +520,7 @@ td {
 
 a {
 	color: #009966;
-	color: var(--link-color);
+	color: var(--gt-spirit--link-color);
 	text-decoration: underline;
 }
 
@@ -528,7 +528,7 @@ a:hover,
 a:focus,
 a:active {
 	color: #252525;
-	color: var(--link-hover-color);
+	color: var(--gt-spirit--link-hover-color);
 	text-decoration: none;
 }
 
@@ -552,9 +552,9 @@ input[type="submit"] {
 	padding: 0.5em 1em;
 	border: none;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-spirit--button-text-color);
 	background-color: #009966;
-	background-color: var(--button-color);
+	background-color: var(--gt-spirit--button-color);
 	text-decoration: none;
 	font-weight: normal;
 	font-size: 16px;
@@ -574,9 +574,9 @@ input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-spirit--button-hover-text-color);
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-spirit--button-hover-color);
 }
 
 input[type="text"],
@@ -641,13 +641,13 @@ textarea {
 	padding: 0.6em 0.8em;
 	border: none;
 	background-color: #009966;
-	background-color: var(--button-color);
+	background-color: var(--gt-spirit--button-color);
 }
 
 .search-form .search-submit:hover,
 .search-form .search-submit:active {
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-spirit--button-hover-color);
 }
 
 .search-form .search-submit .icon-search {
@@ -655,13 +655,13 @@ textarea {
 	width: 22px;
 	height: 22px;
 	fill: #fff;
-	fill: var(--button-text-color);
+	fill: var(--gt-spirit--button-text-color);
 }
 
 .search-form .search-submit:hover .icon-search,
 .search-form .search-submit:active .icon-search {
 	fill: #fff;
-	fill: var(--button-hover-text-color);
+	fill: var(--gt-spirit--button-hover-text-color);
 }
 
 /*--------------------------------------------------------------
@@ -783,7 +783,7 @@ textarea {
 --------------------------------------------------------------*/
 .site-header {
 	background-color: #fff;
-	background-color: var(--header-background-color);
+	background-color: var(--gt-spirit--header-background-color);
 	border-bottom-style: solid;
 	border-bottom-color: rgba(0, 0, 0, 0.075);
 	border-bottom-width: 1px;
@@ -826,29 +826,29 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	text-decoration: none;
 	font-size: 22px;
 	font-size: 1.375rem;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-spirit--title-font);
 	font-weight: normal;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-spirit--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-spirit--title-text-transform);
 	line-height: 1.4;
 }
 
 .site-title a:link,
 .site-title a:visited {
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 }
 
 .site-title a:hover,
 .site-title a:active {
 	color: #009966;
-	color: var(--header-hover-text-color);
+	color: var(--gt-spirit--header-hover-text-color);
 }
 
 .site-description {
@@ -856,7 +856,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	font-size: 12px;
 	font-size: 0.75rem;
 }
@@ -886,16 +886,16 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	list-style: none;
 	font-size: 16px;
 	font-size: 1rem;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
+	font-family: var(--gt-spirit--navi-font);
 	font-weight: normal;
-	font-weight: var(--navi-font-weight);
+	font-weight: var(--gt-spirit--navi-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--gt-spirit--navi-text-transform);
 }
 
 /* Hide the menu on small screens when JavaScript is available. */
@@ -928,14 +928,14 @@ textarea {
 .main-navigation ul a:link,
 .main-navigation ul a:visited {
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	text-decoration: none;
 }
 
 .main-navigation ul a:hover,
 .main-navigation ul a:active {
 	color: #009966;
-	color: var(--header-hover-text-color);
+	color: var(--gt-spirit--header-hover-text-color);
 }
 
 .main-navigation ul li.current-menu-item > a {
@@ -948,7 +948,7 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	background-color: #009966;
-	background-color: var(--submenu-color);
+	background-color: var(--gt-spirit--submenu-color);
 }
 
 .main-navigation ul ul ul {
@@ -966,13 +966,13 @@ textarea {
 .main-navigation ul ul a:link,
 .main-navigation ul ul a:visited {
 	color: #fff;
-	color: var(--submenu-text-color);
+	color: var(--gt-spirit--submenu-text-color);
 }
 
 .main-navigation ul ul a:hover,
 .main-navigation ul ul a:active {
 	color: rgba(255, 255, 255, 0.5);
-	color: var(--submenu-hover-text-color);
+	color: var(--gt-spirit--submenu-hover-text-color);
 }
 
 /* Main Navigation Toggle */
@@ -984,16 +984,16 @@ textarea {
 	border: none;
 	background: none;
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--navi-font);
+	font-family: var(--gt-spirit--navi-font);
 	font-weight: normal;
-	font-weight: var(--navi-font-weight);
+	font-weight: var(--gt-spirit--navi-font-weight);
 	text-transform: none;
-	text-transform: var(--navi-text-transform);
+	text-transform: var(--gt-spirit--navi-text-transform);
 	text-align: left;
 }
 
@@ -1004,14 +1004,14 @@ textarea {
 .menu-toggle:focus {
 	outline: thin dotted;
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	background: none;
 }
 
 .menu-toggle:hover,
 .menu-toggle:active {
 	color: #009966;
-	color: var(--header-hover-text-color);
+	color: var(--gt-spirit--header-hover-text-color);
 	background: none;
 	cursor: pointer;
 }
@@ -1022,13 +1022,13 @@ textarea {
 	height: 24px;
 	vertical-align: top;
 	fill: #252525;
-	fill: var(--header-text-color);
+	fill: var(--gt-spirit--header-text-color);
 }
 
 .menu-toggle:hover .icon,
 .menu-toggle:active .icon {
 	fill: #009966;
-	fill: var(--header-hover-text-color);
+	fill: var(--gt-spirit--header-hover-text-color);
 }
 
 .toggled-on .menu-toggle .icon-menu,
@@ -1053,7 +1053,7 @@ textarea {
 .dropdown-toggle:focus {
 	outline: thin dotted;
 	color: #252525;
-	color: var(--header-text-color);
+	color: var(--gt-spirit--header-text-color);
 	background: none;
 }
 
@@ -1068,13 +1068,13 @@ textarea {
 	height: 20px;
 	vertical-align: top;
 	fill: #252525;
-	fill: var(--header-text-color);
+	fill: var(--gt-spirit--header-text-color);
 }
 
 .dropdown-toggle:hover .icon,
 .dropdown-toggle:active .icon {
 	fill: #009966;
-	fill: var(--header-hover-text-color);
+	fill: var(--gt-spirit--header-hover-text-color);
 }
 
 .dropdown-toggle.toggled-on .icon {
@@ -1091,13 +1091,13 @@ textarea {
 	width: 18px;
 	height: 18px;
 	fill: #fff;
-	fill: var(--submenu-text-color);
+	fill: var(--gt-spirit--submenu-text-color);
 }
 
 .main-navigation ul ul .dropdown-toggle:hover .icon,
 .main-navigation ul ul .dropdown-toggle:active .icon {
 	fill: rgba(255, 255, 255, 0.5);
-	fill: var(--submenu-hover-text-color);
+	fill: var(--gt-spirit--submenu-hover-text-color);
 }
 
 /*--------------------------------------------------------------
@@ -1124,31 +1124,31 @@ textarea {
 	margin: 0;
 	padding: 0;
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-spirit--title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 24px;
 	font-size: 1.5rem;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--title-font);
+	font-family: var(--gt-spirit--title-font);
 	font-weight: normal;
-	font-weight: var(--title-font-weight);
+	font-weight: var(--gt-spirit--title-font-weight);
 	text-transform: none;
-	text-transform: var(--title-text-transform);
+	text-transform: var(--gt-spirit--title-text-transform);
 	line-height: 1.4;
 }
 
 .entry-title a:link,
 .entry-title a:visited {
 	color: #252525;
-	color: var(--title-color);
+	color: var(--gt-spirit--title-color);
 	text-decoration: none;
 }
 
 .entry-title a:hover,
 .entry-title a:active {
 	color: #009966;
-	color: var(--title-hover-color);
+	color: var(--gt-spirit--title-hover-color);
 }
 
 /* Page Header with Featured Image */
@@ -1211,9 +1211,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	display: inline-block;
 	padding: 0.5em 1em;
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-spirit--button-text-color);
 	background-color: #009966;
-	background-color: var(--button-color);
+	background-color: var(--gt-spirit--button-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1221,16 +1221,16 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .more-link:link,
 .more-link:visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-spirit--button-text-color);
 	text-decoration: none;
 }
 
 .more-link:hover,
 .more-link:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-spirit--button-hover-text-color);
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-spirit--button-hover-color);
 	text-decoration: none;
 }
 
@@ -1250,9 +1250,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-spirit--button-hover-text-color);
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-spirit--button-hover-color);
 }
 
 .pagination .page-numbers.dots {
@@ -1263,9 +1263,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .pagination a:hover,
 .pagination a:active {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-spirit--button-text-color);
 	background-color: #009966;
-	background-color: var(--button-color);
+	background-color: var(--gt-spirit--button-color);
 }
 
 /* Comments */
@@ -1308,9 +1308,9 @@ body.tags-hidden.single-post .type-post .entry-tags {
 	padding-top: 1.5rem;
 	padding-bottom: 1px;
 	color: #fff;
-	color: var(--footer-text-color);
+	color: var(--gt-spirit--footer-text-color);
 	background-color: #009966;
-	background-color: var(--footer-background-color);
+	background-color: var(--gt-spirit--footer-background-color);
 }
 
 .footer-widgets .widget {
@@ -1326,13 +1326,13 @@ body.tags-hidden.single-post .type-post .entry-tags {
 .footer-widgets a:link,
 .footer-widgets a:visited {
 	color: rgba(255, 255, 255, 0.6);
-	color: var(--footer-link-color);
+	color: var(--gt-spirit--footer-link-color);
 }
 
 .footer-widgets a:hover,
 .footer-widgets a:active {
 	color: #fff;
-	color: var(--footer-link-hover-color);
+	color: var(--gt-spirit--footer-link-hover-color);
 }
 
 .footer-widgets .widget ul li a {
@@ -1530,7 +1530,7 @@ object {
 .wp-block-quote.is-style-large cite {
 	text-align: inherit;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-spirit--text-font);
 }
 
 /* Pullquote Block */
@@ -1559,7 +1559,7 @@ object {
 .wp-block-pullquote blockquote cite {
 	color: #252525;
 	font-family: "Quicksand", arial, helvetica, sans-serif;
-	font-family: var(--text-font);
+	font-family: var(--gt-spirit--text-font);
 	font-style: normal;
 }
 
@@ -1657,18 +1657,18 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):visited {
 	color: #fff;
-	color: var(--button-text-color);
+	color: var(--gt-spirit--button-text-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-background) {
 	background-color: #009966;
-	background-color: var(--button-color);
+	background-color: var(--gt-spirit--button-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
 	background-color: #252525;
-	background-color: var(--button-hover-color);
+	background-color: var(--gt-spirit--button-hover-color);
 }
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.has-text-color:hover,
@@ -1681,7 +1681,7 @@ object {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color).has-background:active {
 	color: #fff;
-	color: var(--button-hover-text-color);
+	color: var(--gt-spirit--button-hover-text-color);
 	background-color: var(--button-hover-color) !important;
 	text-decoration: none;
 }
@@ -1811,22 +1811,22 @@ object {
 /* Block Text Colors */
 .has-primary-color {
 	color: #009966;
-	color: var(--primary-color);
+	color: var(--gt-spirit--primary-color);
 }
 
 .has-secondary-color {
 	color: #2cbe95;
-	color: var(--secondary-color);
+	color: var(--gt-spirit--secondary-color);
 }
 
 .has-accent-color {
 	color: #990033;
-	color: var(--accent-color);
+	color: var(--gt-spirit--accent-color);
 }
 
 .has-highlight-color {
 	color: #0077aa;
-	color: var(--highlight-color);
+	color: var(--gt-spirit--highlight-color);
 }
 
 .has-white-color {
@@ -1835,17 +1835,17 @@ object {
 
 .has-light-gray-color {
 	color: #e5e5e5;
-	color: var(--light-gray-color);
+	color: var(--gt-spirit--light-gray-color);
 }
 
 .has-gray-color {
 	color: #858585;
-	color: var(--gray-color);
+	color: var(--gt-spirit--gray-color);
 }
 
 .has-dark-gray-color {
 	color: #252525;
-	color: var(--dark-gray-color);
+	color: var(--gt-spirit--dark-gray-color);
 }
 
 .has-black-color {
@@ -1855,22 +1855,22 @@ object {
 /* Block Background Colors */
 .has-primary-background-color {
 	background-color: #009966;
-	background-color: var(--primary-color);
+	background-color: var(--gt-spirit--primary-color);
 }
 
 .has-secondary-background-color {
 	background-color: #2cbe95;
-	background-color: var(--secondary-color);
+	background-color: var(--gt-spirit--secondary-color);
 }
 
 .has-accent-background-color {
 	background-color: #990033;
-	background-color: var(--accent-color);
+	background-color: var(--gt-spirit--accent-color);
 }
 
 .has-highlight-background-color {
 	background-color: #0077aa;
-	background-color: var(--highlight-color);
+	background-color: var(--gt-spirit--highlight-color);
 }
 
 .has-white-background-color {
@@ -1879,17 +1879,17 @@ object {
 
 .has-light-gray-background-color {
 	background-color: #e5e5e5;
-	background-color: var(--light-gray-color);
+	background-color: var(--gt-spirit--light-gray-color);
 }
 
 .has-gray-background-color {
 	background-color: #858585;
-	background-color: var(--gray-color);
+	background-color: var(--gt-spirit--gray-color);
 }
 
 .has-dark-gray-background-color {
 	background-color: #252525;
-	background-color: var(--dark-gray-color);
+	background-color: var(--gt-spirit--dark-gray-color);
 }
 
 .has-black-background-color {
@@ -2272,13 +2272,13 @@ object {
 		width: 13px;
 		height: 13px;
 		fill: #252525;
-		fill: var(--header-text-color);
+		fill: var(--gt-spirit--header-text-color);
 	}
 
 	.main-navigation ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul .page_item_has_children > a:hover > .icon {
 		fill: #009966;
-		fill: var(--header-hover-text-color);
+		fill: var(--gt-spirit--header-hover-text-color);
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a > .icon,
@@ -2294,13 +2294,13 @@ object {
 		/* IE 9 */
 		transform: rotate(-90deg);
 		fill: #fff;
-		fill: var(--submenu-text-color);
+		fill: var(--gt-spirit--submenu-text-color);
 	}
 
 	.main-navigation ul ul .menu-item-has-children > a:hover > .icon,
 	.main-navigation ul ul .page_item_has_children > a:hover > .icon {
 		fill: rgba(255, 255, 255, 0.5);
-		fill: var(--submenu-hover-text-color);
+		fill: var(--gt-spirit--submenu-hover-text-color);
 	}
 }
 
