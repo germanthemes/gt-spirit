@@ -9,7 +9,7 @@
  * GT Spirit only works in WordPress 5.3 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '5.3', '<' ) ) {
-	require get_template_directory() . '/inc/admin/back-compat.php';
+	require get_template_directory() . '/inc/back-compat.php';
 	return;
 }
 
@@ -233,42 +233,8 @@ add_action( 'widgets_init', 'gt_spirit_widgets_init' );
 
 
 /**
- * Set up automatic theme updates.
- *
- * @return void
- */
-function gt_spirit_theme_updater() {
-	if ( '' !== gt_spirit_get_option( 'license_key' ) ) :
-
-		// Setup the updater.
-		$theme_updater = new GT_Spirit_Theme_Updater(
-			array(
-				'remote_api_url' => GT_SPIRIT_STORE_API_URL,
-				'version'        => '1.5.2',
-				'license'        => trim( gt_spirit_get_option( 'license_key' ) ),
-				'item_id'        => GT_SPIRIT_PRODUCT_ID,
-				'item_name'      => 'GT Spirit',
-				'theme_slug'     => 'gt-spirit',
-				'author'         => 'GermanThemes',
-			),
-			array(
-				'update-notice'    => __( "Updating this theme will lose any customizations you have made. 'Cancel' to stop, 'OK' to update.", 'gt-spirit' ),
-				'update-available' => __( '<strong>%1$s %2$s</strong> is available. <a href="%3$s" class="thickbox" title="%4$s">Check out what\'s new</a> or <a href="%5$s"%6$s>update now</a>.', 'gt-spirit' ),
-			)
-		);
-
-	endif;
-}
-add_action( 'admin_init', 'gt_spirit_theme_updater', 0 );
-
-
-/**
  * Include Files
  */
-
-// Include Admin Classes.
-require get_template_directory() . '/inc/admin/license-key.php';
-require get_template_directory() . '/inc/admin/theme-updater.php';
 
 // Include Customizer Options.
 require get_template_directory() . '/inc/customizer/customizer.php';

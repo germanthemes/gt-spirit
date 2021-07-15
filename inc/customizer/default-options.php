@@ -77,8 +77,6 @@ function gt_spirit_default_options() {
 		'navi_font'          => 'Quicksand',
 		'navi_is_bold'       => false,
 		'navi_is_uppercase'  => false,
-		'license_key'        => '',
-		'license_status'     => 'inactive',
 	);
 
 	return apply_filters( 'gt_spirit_default_options', $default_options );
